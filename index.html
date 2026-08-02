@@ -71,10 +71,7 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="js/app.js" as="script">
 
-    <!-- ============================================ -->
-    <!-- CRITICAL: Force no-cache during development -->
-    <!-- Remove this meta in production -->
-    <!-- ============================================ -->
+    <!-- FORCE NO CACHE during development -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -159,8 +156,6 @@
     <!-- MAIN CONTENT AREA -->
     <!-- ============================================ -->
     <main id="mainContent" role="main" aria-live="polite" aria-label="Main content">
-        <!-- All content rendered dynamically by router.js -->
-        <!-- Initial loading state -->
         <div class="loading-state" id="loadingState">
             <div class="loading-spinner" aria-label="Loading content"></div>
             <p class="loading-text">Loading Industry Growth Intelligence System...</p>
@@ -173,7 +168,6 @@
     <footer class="footer" role="contentinfo" aria-label="Site footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- Brand Column -->
                 <div class="footer-col footer-col-brand">
                     <div class="footer-logo" aria-hidden="true">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -185,8 +179,6 @@
                     <p class="footer-tagline">Industry Growth Intelligence & Digital Transformation System™</p>
                     <p class="footer-quote">"We don't sell marketing packages.<br>We design industry growth systems."</p>
                 </div>
-                
-                <!-- Industries Column -->
                 <div class="footer-col">
                     <h4 class="footer-col-title">Industries We Serve</h4>
                     <ul class="footer-list">
@@ -198,8 +190,6 @@
                         <li><a href="#/industries">View All 18 Industries →</a></li>
                     </ul>
                 </div>
-                
-                <!-- Company Column -->
                 <div class="footer-col">
                     <h4 class="footer-col-title">Company</h4>
                     <ul class="footer-list">
@@ -209,8 +199,6 @@
                         <li><a href="#/contact">Contact Us</a></li>
                     </ul>
                 </div>
-                
-                <!-- Contact Column -->
                 <div class="footer-col footer-col-contact">
                     <h4 class="footer-col-title">Get in Touch</h4>
                     <a href="https://wa.me/918959592006" class="footer-wa-btn" target="_blank" rel="noopener noreferrer">
@@ -219,8 +207,6 @@
                     <p class="footer-small">Available for consultation<br>Monday — Saturday<br>10:00 AM — 7:00 PM IST</p>
                 </div>
             </div>
-            
-            <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <p>&copy; 2026 <strong>11 Avtar Digital Hub</strong>. All rights reserved.</p>
                 <p class="footer-small">"Industry Growth Intelligence System™" and "Industry-Specific Digital Growth Intelligence Partner" are trademarks of 11 Avtar Digital Hub.</p>
@@ -238,14 +224,8 @@
     <!-- ============================================ -->
     <!-- JAVASCRIPT FILES (Order is critical!) -->
     <!-- ============================================ -->
-    
-    <!-- 1. Utilities & Helpers -->
     <script src="js/utils.js"></script>
-    
-    <!-- 2. Industry Data Registry -->
     <script src="js/data/industry-index.js"></script>
-    
-    <!-- 3. Individual Industry Data Files (18 files) -->
     <script src="js/data/hospitality.js"></script>
     <script src="js/data/healthcare.js"></script>
     <script src="js/data/realestate.js"></script>
@@ -264,127 +244,139 @@
     <script src="js/data/travel.js"></script>
     <script src="js/data/interior.js"></script>
     <script src="js/data/photography.js"></script>
-    
-    <!-- 4. Reusable UI Components -->
     <script src="js/components.js"></script>
-    
-    <!-- 5. Hash-based SPA Router -->
     <script src="js/router.js"></script>
-    
-    <!-- 6. Page Renderers -->
     <script src="js/pages/home.js"></script>
     <script src="js/pages/industry-page.js"></script>
     <script src="js/pages/proposal.js"></script>
-    
-    <!-- 7. Main Application Controller -->
     <script src="js/app.js"></script>
 
     <!-- ============================================ -->
-    <!-- SERVICE WORKER — CLEANUP & REGISTRATION -->
+    <!-- SERVICE WORKER — COMPLETE CLEANUP & REMOVAL -->
     <!-- ============================================ -->
     <script>
         (function() {
             'use strict';
             
-            console.log('🔍 Starting Service Worker cleanup...');
+            console.log('═══════════════════════════════════════');
+            console.log('🔍 11 Avtar Digital Hub');
+            console.log('   Service Worker Cleanup Starting...');
+            console.log('═══════════════════════════════════════');
             
-            // STEP 1: Unregister ALL existing service workers immediately
+            var cleanupComplete = false;
+            
+            function finishCleanup() {
+                if (cleanupComplete) return;
+                cleanupComplete = true;
+                console.log('✅ ALL CLEANUP COMPLETE');
+                console.log('   No Service Worker is running');
+                console.log('   All caches have been deleted');
+                console.log('   Site will load fresh content directly from server');
+                console.log('═══════════════════════════════════════');
+            }
+            
+            // STEP 1: Unregister ALL Service Workers
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.getRegistrations().then(function(registrations) {
-                    if (registrations.length === 0) {
-                        console.log('ℹ️ No existing Service Workers found');
-                    }
-                    registrations.forEach(function(registration) {
-                        registration.unregister().then(function(success) {
-                            if (success) {
-                                console.log('🗑️ Successfully unregistered SW with scope:', registration.scope);
-                            } else {
-                                console.log('⚠️ Failed to unregister SW with scope:', registration.scope);
-                            }
-                        });
-                    });
-                }).catch(function(error) {
-                    console.error('❌ Error getting SW registrations:', error);
-                });
-            }
-            
-            // STEP 2: Clear ALL caches
-            if ('caches' in window) {
-                caches.keys().then(function(cacheNames) {
-                    if (cacheNames.length === 0) {
-                        console.log('ℹ️ No caches found');
-                    }
-                    cacheNames.forEach(function(cacheName) {
-                        caches.delete(cacheName).then(function(deleted) {
-                            if (deleted) {
-                                console.log('🗑️ Cache deleted:', cacheName);
-                            }
-                        });
-                    });
-                }).then(function() {
-                    console.log('✅ All caches cleared');
-                    
-                    // STEP 3: Now register the NEW Service Worker
-                    registerNewServiceWorker();
-                }).catch(function(error) {
-                    console.error('❌ Error clearing caches:', error);
-                    // Try to register anyway
-                    registerNewServiceWorker();
-                });
-            } else {
-                // Browser doesn't support caches API, just register
-                registerNewServiceWorker();
-            }
-            
-            function registerNewServiceWorker() {
-                if (!('serviceWorker' in navigator)) {
-                    console.log('⚠️ Service Worker not supported in this browser');
-                    return;
-                }
-                
-                // Wait a moment for old SW to fully unregister
-                setTimeout(function() {
-                    navigator.serviceWorker.register('sw.js', { 
-                        scope: '/11Avatar-growth-partner/' 
-                    }).then(function(registration) {
-                        console.log('✅ NEW Service Worker registered successfully');
-                        console.log('   Scope:', registration.scope);
-                        console.log('   State:', registration.installing ? 'installing' : 
-                                     registration.waiting ? 'waiting' : 
-                                     registration.active ? 'active' : 'unknown');
+                navigator.serviceWorker.getRegistrations()
+                    .then(function(registrations) {
+                        console.log('📋 Found ' + registrations.length + ' Service Worker registration(s)');
                         
-                        // Force immediate update check
-                        registration.update().then(function() {
-                            console.log('🔄 SW update check triggered');
-                        }).catch(function(error) {
-                            console.log('⚠️ SW update check failed:', error.message);
-                        });
+                        if (registrations.length === 0) {
+                            console.log('ℹ️ No Service Workers to unregister');
+                        }
                         
-                        // Listen for updates
-                        registration.addEventListener('updatefound', function() {
-                            console.log('🔄 New SW version found, installing...');
-                            var newWorker = registration.installing;
-                            if (newWorker) {
-                                newWorker.addEventListener('statechange', function() {
-                                    console.log('   New SW state:', newWorker.state);
-                                    if (newWorker.state === 'activated') {
-                                        console.log('✅ New SW activated — reloading page...');
-                                        window.location.reload();
-                                    }
+                        var unregisterPromises = registrations.map(function(registration) {
+                            return registration.unregister()
+                                .then(function(success) {
+                                    console.log('   🗑️ Unregistered SW (scope: ' + registration.scope + '): ' + (success ? 'SUCCESS' : 'FAILED'));
+                                    return success;
                                 });
-                            }
                         });
                         
-                    }).catch(function(error) {
-                        console.error('❌ SW registration failed:', error);
-                        console.error('   Error details:', error.message);
-                        console.log('💡 Try using the site in Incognito/Private mode if issues persist');
+                        return Promise.all(unregisterPromises);
+                    })
+                    .then(function() {
+                        console.log('✅ All Service Workers unregistered');
+                        
+                        // STEP 2: Delete ALL caches
+                        if ('caches' in window) {
+                            return caches.keys();
+                        } else {
+                            console.log('ℹ️ Cache API not available');
+                            return [];
+                        }
+                    })
+                    .then(function(cacheNames) {
+                        if (cacheNames.length === 0) {
+                            console.log('ℹ️ No caches found to delete');
+                            finishCleanup();
+                            return;
+                        }
+                        
+                        console.log('📦 Found ' + cacheNames.length + ' cache(s) to delete');
+                        
+                        var deletePromises = cacheNames.map(function(cacheName) {
+                            return caches.delete(cacheName)
+                                .then(function(deleted) {
+                                    console.log('   🗑️ Cache ' + (deleted ? 'DELETED' : 'FAILED') + ': ' + cacheName);
+                                    return deleted;
+                                });
+                        });
+                        
+                        return Promise.all(deletePromises);
+                    })
+                    .then(function() {
+                        // STEP 3: Clear IndexedDB (another potential cache source)
+                        if ('indexedDB' in window) {
+                            console.log('🗄️ Checking IndexedDB...');
+                            // Most IndexedDB databases used by your app
+                            var dbNames = ['11avtar-db', 'industry-data', 'proposals-db'];
+                            dbNames.forEach(function(dbName) {
+                                var deleteRequest = indexedDB.deleteDatabase(dbName);
+                                deleteRequest.onsuccess = function() {
+                                    console.log('   🗑️ IndexedDB deleted: ' + dbName);
+                                };
+                                deleteRequest.onerror = function() {
+                                    console.log('   ⚠️ Could not delete IndexedDB: ' + dbName);
+                                };
+                                deleteRequest.onblocked = function() {
+                                    console.log('   ⚠️ IndexedDB delete blocked: ' + dbName);
+                                };
+                            });
+                        }
+                        
+                        // STEP 4: Clear localStorage (non-critical items)
+                        try {
+                            var keysToRemove = [];
+                            for (var i = 0; i < localStorage.length; i++) {
+                                var key = localStorage.key(i);
+                                if (key && (key.indexOf('cache') !== -1 || key.indexOf('sw_') !== -1 || key.indexOf('pwa') !== -1)) {
+                                    keysToRemove.push(key);
+                                }
+                            }
+                            keysToRemove.forEach(function(key) {
+                                localStorage.removeItem(key);
+                                console.log('   🗑️ localStorage removed: ' + key);
+                            });
+                        } catch(e) {
+                            console.log('   ⚠️ localStorage cleanup skipped');
+                        }
+                        
+                        console.log('✅ Cache cleanup complete');
+                        finishCleanup();
+                    })
+                    .catch(function(error) {
+                        console.error('❌ Cleanup error:', error);
+                        console.log('💡 Try opening this site in an Incognito/Private window');
+                        finishCleanup();
                     });
-                }, 1500); // 1.5 second delay for complete cleanup
+            } else {
+                console.log('⚠️ Service Worker API not supported in this browser');
+                finishCleanup();
             }
             
-            console.log('🔧 Service Worker cleanup & registration complete');
-            console.log('💡 To manually clear: DevTools → Application → Clear Storage → Clear site data');
+            console.log('💡 TIP: If old content still appears, use Incognito/Private mode');
+            console.log('   OR: DevTools → Application → Clear Storage → Clear site data');
         })();
     </script>
 
@@ -392,13 +384,11 @@
     <!-- PWA INSTALL HANDLER -->
     <!-- ============================================ -->
     <script>
-        let deferredPrompt;
+        var deferredPrompt;
         
         window.addEventListener('beforeinstallprompt', function(e) {
             e.preventDefault();
             deferredPrompt = e;
-            
-            // Show install banner after 3 seconds
             setTimeout(function() {
                 var banner = document.getElementById('pwaInstallBanner');
                 if (banner && !localStorage.getItem('pwaDismissed')) {
