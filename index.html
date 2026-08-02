@@ -70,6 +70,14 @@
     <!-- Preload Critical Assets -->
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="js/app.js" as="script">
+
+    <!-- ============================================ -->
+    <!-- CRITICAL: Force no-cache during development -->
+    <!-- Remove this meta in production -->
+    <!-- ============================================ -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 </head>
 <body>
     <!-- ============================================ -->
@@ -272,20 +280,112 @@
     <script src="js/app.js"></script>
 
     <!-- ============================================ -->
-    <!-- SERVICE WORKER REGISTRATION -->
+    <!-- SERVICE WORKER — CLEANUP & REGISTRATION -->
     <!-- ============================================ -->
     <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js', { scope: '/' })
-                    .then(function(registration) {
-                        console.log('✅ SW registered:', registration.scope);
-                    })
-                    .catch(function(error) {
-                        console.log('❌ SW registration failed:', error);
+        (function() {
+            'use strict';
+            
+            console.log('🔍 Starting Service Worker cleanup...');
+            
+            // STEP 1: Unregister ALL existing service workers immediately
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    if (registrations.length === 0) {
+                        console.log('ℹ️ No existing Service Workers found');
+                    }
+                    registrations.forEach(function(registration) {
+                        registration.unregister().then(function(success) {
+                            if (success) {
+                                console.log('🗑️ Successfully unregistered SW with scope:', registration.scope);
+                            } else {
+                                console.log('⚠️ Failed to unregister SW with scope:', registration.scope);
+                            }
+                        });
                     });
-            });
-        }
+                }).catch(function(error) {
+                    console.error('❌ Error getting SW registrations:', error);
+                });
+            }
+            
+            // STEP 2: Clear ALL caches
+            if ('caches' in window) {
+                caches.keys().then(function(cacheNames) {
+                    if (cacheNames.length === 0) {
+                        console.log('ℹ️ No caches found');
+                    }
+                    cacheNames.forEach(function(cacheName) {
+                        caches.delete(cacheName).then(function(deleted) {
+                            if (deleted) {
+                                console.log('🗑️ Cache deleted:', cacheName);
+                            }
+                        });
+                    });
+                }).then(function() {
+                    console.log('✅ All caches cleared');
+                    
+                    // STEP 3: Now register the NEW Service Worker
+                    registerNewServiceWorker();
+                }).catch(function(error) {
+                    console.error('❌ Error clearing caches:', error);
+                    // Try to register anyway
+                    registerNewServiceWorker();
+                });
+            } else {
+                // Browser doesn't support caches API, just register
+                registerNewServiceWorker();
+            }
+            
+            function registerNewServiceWorker() {
+                if (!('serviceWorker' in navigator)) {
+                    console.log('⚠️ Service Worker not supported in this browser');
+                    return;
+                }
+                
+                // Wait a moment for old SW to fully unregister
+                setTimeout(function() {
+                    navigator.serviceWorker.register('sw.js', { 
+                        scope: '/11Avatar-growth-partner/' 
+                    }).then(function(registration) {
+                        console.log('✅ NEW Service Worker registered successfully');
+                        console.log('   Scope:', registration.scope);
+                        console.log('   State:', registration.installing ? 'installing' : 
+                                     registration.waiting ? 'waiting' : 
+                                     registration.active ? 'active' : 'unknown');
+                        
+                        // Force immediate update check
+                        registration.update().then(function() {
+                            console.log('🔄 SW update check triggered');
+                        }).catch(function(error) {
+                            console.log('⚠️ SW update check failed:', error.message);
+                        });
+                        
+                        // Listen for updates
+                        registration.addEventListener('updatefound', function() {
+                            console.log('🔄 New SW version found, installing...');
+                            var newWorker = registration.installing;
+                            if (newWorker) {
+                                newWorker.addEventListener('statechange', function() {
+                                    console.log('   New SW state:', newWorker.state);
+                                    if (newWorker.state === 'activated') {
+                                        console.log('✅ New SW activated — reloading page...');
+                                        window.location.reload();
+                                    }
+                                });
+                            }
+                        });
+                        
+                    }).catch(function(error) {
+                        console.error('❌ SW registration failed:', error);
+                        console.error('   Error details:', error.message);
+                        console.log('💡 Try using the site in Incognito/Private mode if issues persist');
+                    });
+                }, 1500); // 1.5 second delay for complete cleanup
+            }
+            
+            console.log('🔧 Service Worker cleanup & registration complete');
+            console.log('💡 To manually clear: DevTools → Application → Clear Storage → Clear site data');
+        })();
     </script>
 
     <!-- ============================================ -->
@@ -326,4 +426,4 @@
         }
     </script>
 </body>
-</html> 
+</html>
