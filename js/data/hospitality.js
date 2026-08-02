@@ -1014,4 +1014,4 @@ const HOSPITALITY_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Hospitality loaded (Guest Conversion Ecosystem™)');
-window.HOSPITALITY_DATA = HOSPITALITY_DATA;
+window.HOSPITALITY_DATA = HOSPITALITY_DATA; 
