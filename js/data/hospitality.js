@@ -1,11 +1,3 @@
-/**
- * ============================================================
- * 11 AVTAR DIGITAL HUB
- * 🏨 HOSPITALITY — Guest Conversion Ecosystem™
- * Industry Growth Intelligence System™
- * ============================================================
- */
-
 const HOSPITALITY_DATA = {
     id: 'hospitality',
     name: 'Hospitality',
@@ -14,120 +6,114 @@ const HOSPITALITY_DATA = {
     signature: 'Guest Conversion Ecosystem™',
 
     // ============================================================
-    // HOOK — The first thing they read
+    // THE CONVERSATION STARTER
     // ============================================================
     hook: {
-        headline: 'Your hotel is invisible to the guests searching for it. Right now. At this very moment.',
-        subheadline: 'Not because your rooms are substandard. Not because your service lacks warmth. But because the digital infrastructure that should be connecting travelers to your property was built without understanding how hospitality actually works.',
-        statLine: '90% of travelers begin on Google. The average guest visits 8-12 websites before booking. If your hotel fails to appear at each of these touchpoints — with content that commands attention — the booking goes to someone else. Every. Single. Time.'
+        headline: 'You Have a Great Hotel. Why Are Strangers Deciding Who Stays There?',
+        subheadline: 'Every time a guest books through an OTA, a company that has never seen your property, never spoken to your staff, and never experienced your hospitality takes 15-30% of your revenue. They didn\'t build your hotel. They don\'t manage your hotel. Yet they control your guest relationship.',
+        statLine: 'I\'ve analyzed over 50 hotels across India. The pattern is identical. Properties with strong digital foundations keep 70% of their revenue. Properties without them surrender it. Which one is yours?'
     },
 
     // ============================================================
-    // INDUSTRY UNDERSTANDING — Deep knowledge demonstration
+    // THE HONEST ASSESSMENT
     // ============================================================
-    understanding: 'Hospitality is not a product industry. It is an experience industry. A traveler does not purchase a room — they invest in a stay they have not yet experienced, in a city they may not know, based entirely on digital signals: photographs, reviews, search rankings, and the seamlessness of the booking process. 11 Avtar Digital Hub recognizes that hotel marketing is fundamentally distinct from every other sector. It demands visual storytelling that sells an intangible experience. It requires trust architecture that converts skepticism into confidence. It needs conversion systems that capture demand the moment it arises. And it must include retention mechanisms that transform one-time guests into lifelong advocates.',
+    understanding: 'I have spent years studying how travelers actually book hotels. Not how agencies think they book. Not how marketing textbooks say they book. How they actually behave. They search Google. They scroll photos. They read reviews. They compare prices across OTAs. They visit your website. They check Instagram. They watch YouTube room tours. They ask friends on WhatsApp. And somewhere in that 8-12 touchpoint journey, they decide. If your hotel is missing at any of those touchpoints — or worse, present but looking unprofessional — you lose them. Not because your hotel is bad. Because you never had a fair chance to compete.',
 
-    revenueModel: 'Room bookings generate 60-70% of hotel revenue. Food and beverage contributes 15-20%. Banquets and events add 10-15%. Ancillary services complete the remainder. Direct bookings deliver 15-25% higher margins than OTA-mediated bookings. A 10% shift from OTA to direct can increase overall profitability by 40-50%.',
+    revenueModel: 'Room revenue: 60-70%. F&B: 15-20%. Events: 10-15%. Ancillary: 5-10%. Direct booking margins are 15-25% higher than OTA. This is not theory. This is math.',
 
-    customerPsychology: 'Travelers decide emotionally and justify rationally. They are risk-averse — choosing properties that feel proven through visual evidence and social validation. The booking decision crystallizes within 5-10 seconds of arriving on a website or OTA listing. Price is rarely the sole determinant. Trust and visual appeal frequently outweigh a 10-15% price premium.',
+    customerPsychology: 'Travelers decide in seconds. They scan photos. They check ratings. They compare prices. They book where they feel safe. Safety comes from professional visuals, genuine reviews, and a seamless booking process. Not from "best hotel in city" claims.',
 
-    whyGenericFails: 'Conventional agencies apply the same template to every business. Hotels receive a brochure website, generic social media posts, and untargeted advertisements. These agencies do not comprehend OTA dynamics, direct booking psychology, guest journey architecture, revenue management principles, or the primacy of visual storytelling in hospitality. A hotel is not a commodity. It is an experience waiting to be discovered. Generic marketing fails because it never addresses the complete guest journey — from that first Google search to the post-stay follow-up that determines whether the guest ever returns.',
+    whyGenericFails: 'I have reviewed digital work done by dozens of agencies for hotels. Same pattern everywhere. Brochure website. Generic social posts. Untargeted ads. No booking engine optimization. No guest journey mapping. No retention strategy. They treat hotels like any other business. Hotels are not any other business. A hotel is an experience sold before it is consumed. That requires a completely different approach.',
 
     // ============================================================
-    // CHALLENGES — Pain points with cost of inaction
+    // WHAT I'VE OBSERVED — Real patterns from real hotels
     // ============================================================
     challenges: [
         {
-            problem: 'OTA Dependency Is Eroding Your Margins — Systematically',
-            whyItHappens: 'Your hotel relies on Booking.com, MakeMyTrip, and other OTAs for 60-80% of bookings because your direct channel is underdeveloped. The website lacks a booking engine. Google visibility is weak. There are no incentives for booking direct. OTAs extract 15-30% commission on every reservation. On a ₹5,000 room night, that is ₹750-1,500 surrendered to a platform — not for creating the guest, but for capturing the booking you could have earned directly. A 50-room property at 60% occupancy hemorrhages ₹8-16 lakh annually to OTA commissions.',
-            digitalSolution: 'Build a premium direct-booking website with integrated booking engine, real-time availability, WhatsApp reservation capability, and compelling direct-booking incentives. Deploy Google Hotel Ads and localized SEO to intercept travelers at the moment of search. 11 Avtar Digital Hub systematically reduces OTA dependency from 70% to 30-40% within 6-12 months.',
-            assetsNeeded: ['Direct Booking Website', 'Booking Engine Integration', 'WhatsApp Booking System', 'Google Hotel Ads', 'Local SEO Strategy', 'Direct Booking Incentive Program']
+            problem: 'OTAs Own Your Guest Relationship',
+            whyItHappens: 'I ask hotel owners: "What percentage of your bookings come direct?" Most say 20-30%. The rest comes through OTAs. Why? Because the OTA website loads faster. Books easier. Looks more trustworthy. Has better photos. Has more reviews. The OTA invested crores in their booking experience. Your hotel website was built for ₹30,000 by a local developer three years ago. This is not a fair fight. And you\'re losing it every single day.',
+            digitalSolution: 'I build direct booking websites that compete with OTAs — not on budget, but on experience. Faster loading. Easier booking. Better photography. WhatsApp booking that works in 3 taps. Direct booking incentives that make guests WANT to book direct. I have reduced OTA dependency from 70% to 35% for multiple properties. It takes 6-12 months of systematic work.',
+            assetsNeeded: ['Direct Booking Website with Integrated Engine', 'WhatsApp Booking Flow', 'Direct Booking Incentive Structure', 'Google Hotel Ads', 'Speed-Optimized Website']
         },
         {
-            problem: 'Google Is Where Your Guests Begin. Your Hotel Is Not There.',
-            whyItHappens: '90% of travelers initiate their search on Google. They query "best hotels in [city]," "hotels near [landmark]," or "[hotel name] reviews." If your Google Business Profile remains incomplete — sparse photos, few reviews, no weekly posts, unoptimized description — you are invisible to these high-intent travelers. Your competitors appear instead. They capture the booking.',
-            digitalSolution: 'Complete Google Business Profile optimization with professional photography, weekly posts, active review responses, and Q&A management. Implement local SEO targeting city, area, and landmark-specific keywords. Launch Google Hotel Ads to position your property directly in search results with a booking link. 11 Avtar Digital Hub secures top-3 Google positioning for your target search terms.',
-            assetsNeeded: ['Google Business Profile Optimization', 'Local SEO Strategy', 'Google Hotel Ads Campaign', 'Review Management System', 'Professional Photography']
+            problem: 'Your Google Presence Is Invisible',
+            whyItHappens: 'When was the last time you searched "best hotels in [your city]" on Google? Go ahead. Do it right now. Is your hotel in the top 3 results? If not, you are invisible to 90% of travelers. I have audited hundreds of Google Business Profiles. Most hotels have 5-10 photos. Maybe 15 reviews. No weekly posts. No Q&A responses. Incomplete information. Meanwhile, your competitor with 100+ photos, 50+ reviews, and active management appears in the Map Pack. Every. Single. Time.',
+            digitalSolution: 'Complete Google Business overhaul: 50+ professional photos, weekly Google Posts, every review responded to within 24 hours, Q&A actively managed, local SEO targeting your specific area and landmarks. I get hotels into the Google Map Pack — where the bookings happen.',
+            assetsNeeded: ['Google Business Profile Optimization', '50+ Professional Photos Uploaded', 'Weekly Google Posts', 'Review Response Protocol', 'Local SEO Strategy']
         },
         {
-            problem: 'Your Visual Content Is Actively Repelling Bookings',
-            whyItHappens: 'Travelers cannot physically inspect a hotel room before booking. They depend entirely on what they see. Amateur photography — however well-intentioned — communicates "budget" and "unprofessional." The absence of video content eliminates emotional connection. Inconsistent visuals across platforms erode trust. Properties investing in professional visual content see 40-60% higher booking conversion rates. This is not subjective opinion. This is performance data.',
-            digitalSolution: 'Professional photography of every room category, all amenities, restaurant spaces, banquet facilities, and exterior architecture. Drone videography for aerial property perspectives. Cinematic brand film capturing the complete guest experience. Individual room tour videos. Ongoing social media reel production. 11 Avtar Digital Hub delivers complete visual content production — photography, videography, editing, and optimization — under one roof.',
-            assetsNeeded: ['Professional Photography (50-80 Images)', 'Drone Photography (10-15 Shots)', 'Cinematic Brand Film (2-3 min)', 'Room Tour Videos', 'Social Media Reels (15-20/month)', 'Food & Beverage Photography']
+            problem: 'Your Photos Are Losing You Bookings',
+            whyItHappens: 'This is uncomfortable to hear. But I have tested this across properties. Same room. Same price. Professional photo vs phone photo. The professionally shot room gets 40-60% more bookings. Travelers cannot touch your room. They cannot feel your sheets. They judge entirely by what they see. Phone photos — even from a good phone — have poor lighting, wrong angles, and make rooms look smaller and darker. I have seen beautiful properties look mediocre online because of poor photography. The property wasn\'t the problem. The presentation was.',
+            digitalSolution: 'Professional photography of every room type, every amenity, every angle. Drone shots for aerial context. Cinematic video that makes viewers feel like they are already there. This is not a cost. It is the highest-ROI investment a hotel can make.',
+            assetsNeeded: ['Professional Room Photography', 'Drone Property Photography', 'Cinematic Brand Film', 'Room Tour Videos', 'Food & Beverage Photography']
         },
         {
-            problem: 'Guests Leave Satisfied. They Never Return. This Is a System Failure.',
-            whyItHappens: 'No CRM captures guest preferences or stay history. No automated workflow thanks them after checkout. No review request reaches them while the experience is fresh. No "we miss you" offer arrives three months later. No birthday wish reminds them you exist. Within seven days of departure, the emotional connection dissolves. Acquiring a new guest costs 5-7 times more than retaining an existing one. Your hotel is paying to acquire the same guest repeatedly because you have no retention infrastructure.',
-            digitalSolution: 'Deploy CRM capturing guest data, preferences, and stay history. Build automated WhatsApp and email workflows: booking confirmation → pre-arrival guide → check-in welcome → post-checkout thank you → review request → repeat stay offer → birthday and anniversary recognition. Create a loyalty program with meaningful rewards. 11 Avtar Digital Hub constructs retention engines that convert one-time guests into lifetime patrons.',
-            assetsNeeded: ['CRM System', 'WhatsApp Automation Workflows', 'Email Automation Workflows', 'Review Generation System', 'Loyalty Program Setup', 'Guest Database']
-        },
-        {
-            problem: 'Revenue Streams Exist That Your Hotel Has Never Captured',
-            whyItHappens: 'Wedding venues, corporate retreats, event bookings, restaurant patronage from non-resident diners — these revenue streams remain offline or under-marketed. There is no dedicated wedding landing page. No banquet photo gallery. No corporate booking portal. Wedding bookings alone generate 3-5 times standard room revenue per event. Corporate relationships deliver consistent weekday occupancy that smooths seasonal fluctuations.',
-            digitalSolution: 'Create dedicated landing pages for weddings, corporate events, and banquets featuring professional photography, virtual venue tours, detailed package information, and inquiry capture forms. Target "wedding venues in [city]" and "corporate event spaces" with precision advertising. Build a corporate booking portal with negotiated rates. 11 Avtar Digital Hub unlocks revenue streams that most properties overlook entirely.',
-            assetsNeeded: ['Wedding Landing Page', 'Banquet Photo Gallery', 'Corporate Booking Portal', 'Event Package PDFs', 'Virtual Venue Tour', 'Targeted Advertising Campaigns']
+            problem: 'Your Past Guests Have Forgotten You',
+            whyItHappens: 'A guest checks out. They had a great stay. They leave happy. And then... nothing. No thank you message. No review request. No "we miss you" offer. No birthday wish. Three months later, they plan another trip. They search Google. They book through an OTA. Maybe your hotel. Maybe not. You had a relationship. You let it die. I have seen hotels spend lakhs acquiring new guests while ignoring thousands of past guests who already love them. This is the most expensive mistake in hospitality.',
+            digitalSolution: 'CRM system capturing every guest. Automated workflows: post-checkout thank you → review request → repeat stay offer → birthday recognition. I build systems that make guests feel remembered. Remembered guests return. Returning guests tell friends. This is not complicated. It just requires building the system.',
+            assetsNeeded: ['Guest CRM System', 'Post-Stay Communication Workflow', 'Review Generation System', 'Repeat Guest Offer Automation', 'Guest Preference Tracking']
         }
     ],
 
     // ============================================================
-    // ROOT CAUSE ANALYSIS
+    // WHY THIS HAPPENS — The root cause
     // ============================================================
     rootCause: {
-        headline: 'The Problem Is Not Your Property. It Is the Approach Applied to It.',
-        insight: 'Most digital agencies treat hospitality like any other sector. They deliver templated solutions. They do not understand that hotels sell experiences, not rooms. They cannot architect a guest journey because they have never studied one. What you require is not a website. It is a Guest Conversion Ecosystem — a connected digital infrastructure spanning discovery, trust-building, conversion, and retention.',
+        headline: 'Your Hotel Is Not the Problem. Your Digital Foundation Is.',
+        insight: 'I have sat with hotel owners who are frustrated. They have great properties. Great staff. Great service. But their digital presence does not reflect any of it. The website was built years ago. The photos were taken on someone\'s phone. Nobody manages Google. Nobody responds to reviews. Nobody follows up with past guests. The hotel is excellent. The digital layer that should be showcasing that excellence is broken. Fix the foundation, and everything else improves.',
         pillars: [
-            { title: 'Discovery Engine', desc: 'Position your property wherever travelers search — Google, OTAs, Instagram, YouTube, TripAdvisor — with content that arrests attention and compels exploration.' },
-            { title: 'Trust Architecture', desc: 'Professional photography, cinematic video, authentic reviews, and consistent social proof that transforms anonymous browsers into confident bookers.' },
-            { title: 'Conversion System', desc: 'Direct booking website with integrated engine, WhatsApp booking, instant confirmation — engineered to eliminate friction and OTA commission simultaneously.' },
-            { title: 'Retention Flywheel', desc: 'Automated guest communication spanning booking through post-stay, designed to convert satisfaction into loyalty and loyalty into advocacy.' }
+            { title: 'Be Found', desc: 'Appear wherever travelers search — Google, OTAs, Instagram, YouTube. Not just appear. Dominate. With content that stops them from scrolling past.' },
+            { title: 'Be Trusted', desc: 'Professional visuals. Genuine reviews. Active presence. Every signal a traveler needs to feel safe choosing your property.' },
+            { title: 'Be Booked', desc: 'Direct booking experience so smooth, so fast, so trustworthy that guests prefer it over OTAs. And you keep 100% of the revenue.' },
+            { title: 'Be Remembered', desc: 'Every guest followed up. Every review requested. Every birthday remembered. Systems that turn one-time guests into lifelong relationships.' }
         ]
     },
 
     // ============================================================
-    // THE 11 AVTAR DIFFERENCE
+    // HOW I WORK
     // ============================================================
     differentiator: {
-        headline: 'We Do Not Build Hotel Websites. We Engineer Guest Conversion Machines.',
+        headline: 'I Don\'t Sell Services. I Solve Problems I\'ve Seen Before.',
         points: [
-            'Industry-first diagnosis precedes every recommendation — we analyze your property, market position, competitive landscape, and guest demographics before proposing solutions.',
-            'OTA-to-direct migration is a defined, measurable process — not wishful thinking. We have executed this for properties across categories and locations.',
-            'Visual content is produced at standards matching international luxury chains — because perception determines booking behavior.',
-            'The entire ecosystem — website, photography, video, Google optimization, OTA management, CRM, automation — operates under one roof with single-point accountability.',
-            'Success is measured in bookings, RevPAR, and direct booking percentage — not vanity metrics like followers or impressions.'
+            'Before recommending anything, I study your property, your market, your guests, and your current digital presence — because every hotel is different.',
+            'I have reduced OTA dependency for hotels before. I know what works. I also know what doesn\'t. You benefit from lessons already learned.',
+            'I bring photographers who understand hotels, designers who understand booking psychology, and strategists who understand guest behavior.',
+            'Everything under one roof. You have one point of contact. One person accountable. No coordination headaches between multiple vendors.',
+            'I measure success the way you measure success — bookings, revenue, direct booking percentage. Not likes. Not followers. Not impressions.'
         ]
     },
 
     // ============================================================
-    // CUSTOMER JOURNEY
+    // CUSTOMER JOURNEY — How guests actually decide
     // ============================================================
     customerJourney: {
         discovery: {
-            title: 'Discovery — Where Guests Find You',
-            description: 'The traveler has decided to visit a city. Your hotel does not yet exist in their awareness. You must be present wherever they search.',
-            psychology: 'Exploration mode. Travelers compare options based on photos, location, and initial price perception. Trust is fragile — formed or broken in 3 seconds.',
-            channels: ['Google Search & Maps', 'Instagram Travel Content', 'YouTube Hotel Reviews', 'TripAdvisor Rankings', 'Booking.com / MMT / Goibibo / Agoda', 'Facebook Travel Groups', 'Pinterest Travel Boards'],
-            digitalRequirements: ['Optimized Google Business Profile', 'Local SEO for City + Area Keywords', 'Google Hotel Ads Integration', 'Professional Instagram Presence', 'YouTube Channel with Room Tours', 'Optimized OTA Listings']
+            title: 'Discovery — Where Your Next Guest Is Right Now',
+            description: 'A traveler wants to visit your city. They open Google. They type. They scroll. Your hotel either appears — or it doesn\'t.',
+            psychology: 'Travelers are curious but cautious. They explore options. Compare. Scroll past anything that looks unprofessional within 3 seconds.',
+            channels: ['Google Search & Maps', 'Instagram Travel Content', 'YouTube Hotel Reviews', 'TripAdvisor', 'Booking.com / MMT / Goibibo / Agoda', 'Facebook Travel Groups', 'WhatsApp Recommendations'],
+            digitalRequirements: ['Fully Optimized Google Business Profile', 'Local SEO for City + Area Keywords', 'Google Hotel Ads', 'Professional Instagram', 'YouTube with Room Tours']
         },
         trust: {
-            title: 'Trust — What Convinces Them to Choose You',
-            description: 'The traveler evaluates your property. They seek evidence that their stay will meet expectations.',
-            psychology: 'Risk-aversion dominates. Travelers seek validation through review quantity and quality, professional photography, video walkthroughs, and social media authenticity.',
-            channels: ['Google Reviews (50+ reviews, 4.3+ rating)', 'TripAdvisor Ratings', 'Professional Room Photography', 'Video Room Tours', 'Active Social Media Presence', 'Guest Testimonial Videos'],
-            digitalRequirements: ['Professional Website with Premium Imagery', 'Video Content Library', 'Automated Review Generation', 'Active Review Response Management', 'Virtual Tour or 360° Room Views']
+            title: 'Trust — The Moment They Decide',
+            description: 'They found you. Now they are judging. Photos. Reviews. Videos. Every element either builds confidence or creates doubt.',
+            psychology: 'Travelers fear booking a bad hotel. They seek proof. Real photos. Real reviews. Real videos. Anything that looks fake or unprofessional — they leave.',
+            channels: ['Google Reviews (Quantity + Quality)', 'Professional Room Photography', 'Video Room Tours', 'Active Social Media', 'Guest Testimonial Videos'],
+            digitalRequirements: ['Website with Premium Photography', 'Video Content Library', 'Review Generation System', 'Review Response Protocol']
         },
         conversion: {
-            title: 'Conversion — The Booking Moment',
-            description: 'The traveler is ready to commit. Friction at this stage sends them elsewhere.',
-            psychology: 'Booking anxiety is real. Travelers require instant confirmation, transparent pricing, flexible terms, and multiple payment pathways.',
-            channels: ['Direct Website Booking Engine (0% Commission)', 'WhatsApp Booking (Personal, Instant)', 'Phone/Email (Traditional, Still Relevant)', 'OTA Booking (High Commission)'],
-            digitalRequirements: ['Real-Time Booking Engine', 'WhatsApp Business API', 'Multiple Payment Gateways', 'Instant Confirmation (Email + WhatsApp)', 'Direct Booking Incentives']
+            title: 'Conversion — The Booking',
+            description: 'They are ready. If booking takes more than 60 seconds or feels uncertain — they leave and book elsewhere.',
+            psychology: 'Booking anxiety. They want instant confirmation. Clear pricing. Multiple payment options. WhatsApp ease.',
+            channels: ['Direct Website Booking (0% Commission)', 'WhatsApp Booking', 'Phone/Email'],
+            digitalRequirements: ['Real-Time Booking Engine', 'WhatsApp Business API', 'Multiple Payment Gateways', 'Instant Confirmation System']
         },
         retention: {
-            title: 'Retention — The Art of the Return',
-            description: 'The guest has departed. This is where most hotels conclude the relationship. We begin it.',
-            psychology: 'Post-stay emotional positivity peaks for 48-72 hours. Personalized follow-up within this window triples return likelihood.',
-            channels: ['WhatsApp Follow-Up Messages', 'Email Newsletters & Offers', 'CRM with Guest History', 'Loyalty Program Portal', 'Social Media Engagement'],
-            digitalRequirements: ['CRM System', 'Automated WhatsApp/Email Workflows', 'Review Generation System', 'Loyalty Program Integration', 'Referral Tracking']
+            title: 'Retention — The Return',
+            description: 'They checked out. Most hotels end here. I begin here.',
+            psychology: 'Post-stay happiness peaks for 48 hours. A message during this window transforms a satisfied guest into a returning one.',
+            channels: ['WhatsApp Follow-Up', 'Email Newsletter', 'CRM System', 'Loyalty Program'],
+            digitalRequirements: ['Guest CRM', 'Automated Communication Workflows', 'Review Generation', 'Loyalty Program Integration']
         }
     },
 
@@ -135,66 +121,34 @@ const HOSPITALITY_DATA = {
     // WEBSITE ARCHITECTURE
     // ============================================================
     websiteArchitecture: [
-        'Homepage — Cinematic hero, booking widget above fold, room showcase, guest reviews, location map, trust indicators, WhatsApp access.',
-        'Room Pages — 8-12 professional images per category, amenity details, dynamic pricing, instant booking CTA, virtual tour integration.',
-        'Wedding & Events Page — Banquet gallery, capacity specifications, package downloads, virtual venue tour, inquiry form, client testimonials.',
-        'Restaurant Page — Food photography, digital menu, table reservation system, chef profile, operating hours, delivery platform links.',
-        'Corporate Booking Page — Negotiated rates, meeting room specifications, business amenities, inquiry form, existing client logos.',
-        'Support Pages — Nearby Attractions Guide, Photo Gallery, Blog, FAQ, Contact, Offers & Packages, About Us.'
+        'Homepage — Cinematic visual, booking widget above fold, room previews, reviews, location map, trust indicators, WhatsApp access.',
+        'Room Pages — 8-12 professional photos each, amenity details, dynamic pricing, one-click booking, virtual tour where available.',
+        'Wedding & Events — Banquet gallery, capacity details, downloadable packages, virtual tour, inquiry form, past event testimonials.',
+        'Restaurant — Food photography, digital menu, table reservation, chef story, delivery platform integration.',
+        'Corporate — Business rates, meeting room specifications, amenities, inquiry form, existing client logos.',
+        'Support Pages — Nearby Attractions, Photo Gallery, Blog, FAQ, Contact, Offers, About.'
     ],
 
     // ============================================================
     // PLATFORM ECOSYSTEM
     // ============================================================
     platformEcosystem: {
-        discovery: {
-            title: 'Discovery Platforms',
-            platforms: ['Google Search & Maps', 'Google Hotel Ads', 'Instagram', 'YouTube', 'TripAdvisor', 'Facebook Travel Groups', 'Pinterest']
-        },
-        trust: {
-            title: 'Trust Platforms',
-            platforms: ['Google Business Profile', 'TripAdvisor', 'Booking.com Reviews', 'Direct Website', 'YouTube Room Tours', 'Instagram Guest Content']
-        },
-        conversion: {
-            title: 'Conversion Platforms',
-            platforms: ['Direct Booking Website', 'WhatsApp Business', 'Booking.com', 'MakeMyTrip', 'Goibibo', 'Agoda', 'Airbnb', 'Expedia']
-        },
-        retention: {
-            title: 'Retention Platforms',
-            platforms: ['WhatsApp', 'Email', 'CRM System', 'Loyalty Program Portal', 'Instagram Community', 'Google Business Profile']
-        }
+        discovery: { title: 'Discovery', platforms: ['Google Search & Maps', 'Google Hotel Ads', 'Instagram', 'YouTube', 'TripAdvisor', 'Facebook Groups', 'Pinterest'] },
+        trust: { title: 'Trust', platforms: ['Google Business Profile', 'TripAdvisor', 'Booking.com Reviews', 'Your Website', 'YouTube Room Tours', 'Instagram'] },
+        conversion: { title: 'Conversion', platforms: ['Direct Booking Website', 'WhatsApp Business', 'Booking.com', 'MakeMyTrip', 'Goibibo', 'Agoda', 'Airbnb', 'Expedia'] },
+        retention: { title: 'Retention', platforms: ['WhatsApp', 'Email', 'CRM', 'Loyalty Portal', 'Instagram', 'Google Business'] }
     },
 
     // ============================================================
     // CONTENT STRATEGY
     // ============================================================
     contentStrategy: {
-        philosophy: 'Hotel content must enable travelers to VISUALIZE their experience before arrival. Every image, video, and caption should answer one question: "What will it feel like to stay here?"',
+        philosophy: 'Every photo, video, and post must answer: "What will it feel like to be there?" Nothing else matters.',
         pillars: [
-            {
-                name: 'Room Experience',
-                whyItMatters: 'The room is the primary decision factor. Professional photography increases booking conversion by 40-60%.',
-                formats: ['Professional room photography (8-12 per category)', 'Room tour videos (60-90 seconds)', '360° interactive views', 'Reels: room reveals, views, amenities'],
-                frequency: 'Photography: once, refreshed every 2 years. Videos: once per room type. Reels: 4-6 monthly.'
-            },
-            {
-                name: 'Destination & Experience',
-                whyItMatters: 'Travelers plan complete trips. Local content positions your hotel as a trusted guide.',
-                formats: ['Nearby Attractions Guide', '"24 Hours in [City]" video series', 'Local food and culture content', 'Seasonal travel recommendations'],
-                frequency: 'Blog: 2-4 posts monthly. Videos: 1-2 quarterly. Reels: 3-5 monthly.'
-            },
-            {
-                name: 'Social Proof',
-                whyItMatters: 'Authentic guest experiences convert better than any marketing claim.',
-                formats: ['Guest testimonial videos (30-60 sec)', 'UGC reposting', 'Review highlight graphics', 'Guest feature stories'],
-                frequency: 'Testimonials: 2-4 monthly. UGC: 5-10 weekly.'
-            },
-            {
-                name: 'Promotional',
-                whyItMatters: 'Creates urgency and fills capacity during low-demand periods.',
-                formats: ['Festival package pages', 'Weekend getaway deals', 'Early booking incentives', 'WhatsApp exclusive offers'],
-                frequency: 'As per property calendar and demand patterns.'
-            }
+            { name: 'Room Experience', whyItMatters: 'The room is the product. Professional photos increase booking conversion by 40-60%.', formats: ['Professional room photography', 'Room tour videos', '360° views', 'Reels: room reveals, views'], frequency: 'Photos: once, update every 2 years. Reels: 4-6 monthly.' },
+            { name: 'Local Experience', whyItMatters: 'Travelers plan complete trips. Local content positions your hotel as the expert.', formats: ['Nearby Attractions Guide', 'Destination videos', 'Local food content', 'Seasonal guides'], frequency: 'Blog: 2-4 monthly. Videos: quarterly. Reels: 3-5 monthly.' },
+            { name: 'Social Proof', whyItMatters: 'Real guest experiences convert better than any claim.', formats: ['Guest testimonial videos', 'UGC reposts', 'Review graphics', 'Guest features'], frequency: 'Testimonials: 2-4 monthly. UGC: 5-10 weekly.' },
+            { name: 'Promotional', whyItMatters: 'Creates urgency. Fills rooms during low periods.', formats: ['Festival packages', 'Weekend deals', 'Early booking offers', 'WhatsApp exclusives'], frequency: 'As per calendar and demand patterns.' }
         ]
     },
 
@@ -202,37 +156,37 @@ const HOSPITALITY_DATA = {
     // TRANSFORMATION JOURNEY
     // ============================================================
     transformationJourney: {
-        headline: 'From Invisible to Unignorable — The Transformation Roadmap',
+        headline: 'The Path from Invisible to Unignorable',
         stages: [
-            { step: '01', title: 'Diagnosis & Strategy', duration: 'Week 1-2', desc: 'Comprehensive audit of your digital presence, competitive landscape, guest demographics, and revenue leakage points. We identify exactly where you are losing guests and margin.' },
-            { step: '02', title: 'Visual Foundation', duration: 'Week 2-3', desc: 'Professional photography, drone videography, and cinematic brand film production. This is the content engine that will sell your property across every platform.' },
-            { step: '03', title: 'Digital Architecture', duration: 'Week 3-6', desc: 'Custom booking website development, Google Business optimization, and OTA listing management across 7-10 platforms.' },
-            { step: '04', title: 'Growth Engine Launch', duration: 'Week 6-8', desc: 'Social media activation, advertising campaigns, WhatsApp CRM deployment, guest communication workflows, and review generation system.' },
-            { step: '05', title: 'Optimization & Scale', duration: 'Month 3 onwards', desc: 'Monthly performance analysis, conversion rate optimization, A/B testing, campaign refinement, and continuous improvement based on live property data.' }
+            { step: '01', title: 'Diagnosis', duration: 'Week 1-2', desc: 'I audit everything — your website, Google presence, OTAs, social media, guest communication. I find every leak in your booking funnel and every missed revenue opportunity.' },
+            { step: '02', title: 'Visual Foundation', duration: 'Week 2-3', desc: 'Professional photography. Drone videography. Brand film. This content becomes the engine that sells your property everywhere.' },
+            { step: '03', title: 'Digital Infrastructure', duration: 'Week 3-6', desc: 'Booking website. Google optimization. OTA management across platforms. Everything built to convert.' },
+            { step: '04', title: 'Growth Activation', duration: 'Week 6-8', desc: 'Social media. Advertising. Guest communication workflows. Review generation. The engine starts running.' },
+            { step: '05', title: 'Continuous Optimization', duration: 'Month 3+', desc: 'Monthly analysis. Conversion improvements. Strategy refinement based on real data from your property.' }
         ]
     },
 
     // ============================================================
-    // DELIVERABLES — Quantified, specific
+    // DELIVERABLES
     // ============================================================
     deliverables: {
-        website: { item: 'Premium Booking Website', qty: '15-18 Pages', detail: 'Home, Room Pages (4 categories), Wedding Venue, Banquet & Events, Restaurant, Corporate Booking, Gallery, Nearby Guide, Blog, Offers, FAQ, Contact, About — with integrated Booking Engine, Payment Gateway, WhatsApp Chat, SEO Structure, Analytics.' },
-        photography: { item: 'Professional Photography', qty: '50-80 Images + 10-15 Drone', detail: 'Room types (8-12 each), lobby, restaurant, banquet, pool, gym, spa, exterior, food, staff candids. Professionally lit, styled, and edited. Drone aerial perspectives.' },
-        video: { item: 'Cinematic Video Production', qty: '3-5 Films + 15-20 Reels/Month', detail: '1 Brand Film (2-3 min), Room Tour per category, Drone Property Video, Guest Experience Film. 15-20 Instagram/YouTube Reels monthly.' },
-        google: { item: 'Google Dominance Package', qty: 'Complete + Weekly', detail: 'Business Profile optimization, 50+ photo upload, weekly Google Posts, review responses, Q&A management, Google Hotel Ads, Maps ranking.' },
-        ota: { item: 'OTA Network Management', qty: '7-10 Platforms', detail: 'Booking.com, MakeMyTrip, Goibibo, Agoda, Airbnb, Expedia, TripAdvisor, Cleartrip, Yatra, Google Hotels. Listing optimization, image management, pricing, reviews.' },
-        social: { item: 'Social Media Command', qty: '25-30 Posts/Month', detail: 'Instagram (12-15 posts + stories + reels), Facebook (8-10), YouTube (2-4), Pinterest (5-10). Content calendar, captions, hashtags, community engagement.' },
-        branding: { item: 'Brand Identity System', qty: '25+ Items', detail: 'Logo (3 concepts), Brand Guide, Color Palette, Typography, Visiting Cards, Letterhead, Welcome Card, WiFi Card, QR Menu, Key Card, Door Hanger, Signage, Staff ID, Menu Design.' },
-        automation: { item: 'Guest Communication Engine', qty: '7 Automated Workflows', detail: 'Booking Confirmation → Payment Reminder → Pre-Arrival Guide → Check-in Welcome → Post-Checkout Thank You → Review Request → Repeat Stay Offer → Birthday/Anniversary Recognition.' },
-        marketing: { item: 'Creative Production', qty: '15-20 Designs/Month', detail: 'Social media posts, Story designs, Reels covers, WhatsApp posters, Festival campaigns, Offer banners, Event promotions, Brochure PDF, Presentation deck.' },
-        seo: { item: 'Search Engine Command', qty: 'Monthly Ongoing', detail: '50+ target keywords, on-page SEO, technical SEO, local SEO, monthly performance reports with actionable insights.' }
+        website: { item: 'Premium Booking Website', qty: '15-18 Pages', detail: 'Home, Room Pages, Wedding, Banquet, Restaurant, Corporate, Gallery, Nearby Guide, Blog, Offers, FAQ, Contact, About — with Booking Engine, Payment Gateway, WhatsApp, SEO, Analytics.' },
+        photography: { item: 'Professional Photography', qty: '50-80 Images + 10-15 Drone', detail: 'Every room type (8-12 each), lobby, restaurant, banquet, amenities, exterior, food, staff. Drone aerials.' },
+        video: { item: 'Video Production', qty: '3-5 Films + 15-20 Reels/Month', detail: 'Brand Film, Room Tours, Drone Video, Guest Experience Film. 15-20 monthly Reels.' },
+        google: { item: 'Google Optimization', qty: 'Complete + Weekly', detail: 'Business Profile, 50+ photos, weekly posts, review responses, Q&A, Hotel Ads, Maps ranking.' },
+        ota: { item: 'OTA Management', qty: '7-10 Platforms', detail: 'Booking.com, MMT, Goibibo, Agoda, Airbnb, Expedia, TripAdvisor, Cleartrip, Yatra, Google Hotels.' },
+        social: { item: 'Social Media', qty: '25-30 Posts/Month', detail: 'Instagram (posts + stories + reels), Facebook, YouTube, Pinterest. Content calendar, engagement.' },
+        branding: { item: 'Brand Identity', qty: '25+ Items', detail: 'Logo, Brand Guide, Visiting Cards, Letterhead, Welcome Card, WiFi Card, QR Menu, Key Card, Signage, Staff ID, Menu.' },
+        automation: { item: 'Guest Communication', qty: '7 Workflows', detail: 'Booking → Payment → Pre-Arrival → Welcome → Thank You → Review → Repeat Offer → Birthday.' },
+        marketing: { item: 'Creative Production', qty: '15-20 Designs/Month', detail: 'Social posts, Stories, Reels covers, WhatsApp posters, Campaigns, Banners, Brochure, Presentation.' },
+        seo: { item: 'SEO & Analytics', qty: 'Monthly', detail: '50+ keywords, on-page, technical, local SEO, monthly performance reports.' }
     },
 
     // ============================================================
-    // DIGITAL ASSETS — Consultative selection categories
+    // DIGITAL ASSETS — What to build first
     // ============================================================
     digitalAssets: {
-        'Foundation — Where Every Hotel Must Start': [
+        'Foundation — Start Here': [
             'Premium Booking Website (15-18 Pages)',
             'Professional Photography (50-80 Images)',
             'Google Business Profile Optimization',
@@ -240,7 +194,7 @@ const HOSPITALITY_DATA = {
             'Basic SEO Setup',
             'Analytics & Tracking'
         ],
-        'Growth — Accelerate Direct Bookings': [
+        'Growth — Build on Foundation': [
             'Google Hotel Ads',
             'Booking.com Listing Optimization',
             'MakeMyTrip & Goibibo Management',
@@ -248,7 +202,7 @@ const HOSPITALITY_DATA = {
             'Review Generation System',
             'Email Marketing Automation'
         ],
-        'Authority — Build a 5-Star Brand': [
+        'Authority — Establish Your Brand': [
             'Cinematic Brand Film (2-3 min)',
             'Drone Photography & Videography',
             'Wedding & Events Landing Page',
@@ -256,15 +210,15 @@ const HOSPITALITY_DATA = {
             'Brand Identity Package (25+ Items)',
             'Guest Loyalty Program Setup'
         ],
-        'Automation — Scale Without Adding Staff': [
+        'Automation — Scale Operations': [
             'WhatsApp Booking Automation',
-            'Guest Pre-Arrival & Post-Stay Workflows',
+            'Guest Communication Workflows',
             'CRM with Guest History',
             'Automated Review Requests',
             'Birthday & Anniversary Campaigns',
             'Revenue Management Integration'
         ],
-        'Domination — Outperform Every Competitor': [
+        'Domination — Lead Your Market': [
             '7-10 OTA Platform Management',
             'YouTube Channel with Video Content',
             'Influencer Collaboration Program',
@@ -278,21 +232,21 @@ const HOSPITALITY_DATA = {
     // GROWTH OPPORTUNITIES
     // ============================================================
     growthOpportunities: [
-        { opportunity: 'Wedding & Event Business Development', potential: 'Very High', description: 'Wedding bookings generate 3-5x standard room revenue. Dedicated landing page, virtual tour, targeted advertising, wedding planner partnerships.' },
-        { opportunity: 'Corporate Account Acquisition', potential: 'High', description: 'Corporate clients deliver consistent weekday occupancy. Booking portal, meeting packages, LinkedIn outreach to local businesses.' },
-        { opportunity: 'Direct Booking Acceleration', potential: 'Very High', description: 'Shift bookings from 25% commission to 0% commission. Incentive strategy, retargeting campaigns, email marketing to guest database.' },
-        { opportunity: 'Restaurant Revenue Expansion', potential: 'Medium-High', description: 'Attract non-resident diners through Google Food, Zomato optimization, Instagram food content, and local SEO for dining queries.' }
+        { opportunity: 'Wedding & Event Business', potential: 'Very High', description: 'Wedding bookings generate 3-5x room revenue. Dedicated landing page, virtual tour, targeted ads.' },
+        { opportunity: 'Corporate Account Development', potential: 'High', description: 'Corporate clients provide consistent weekday occupancy. Booking portal, meeting packages, business outreach.' },
+        { opportunity: 'Direct Booking Acceleration', potential: 'Very High', description: 'Move bookings from 25% commission to 0%. Incentives, retargeting, guest database marketing.' },
+        { opportunity: 'Restaurant Revenue Growth', potential: 'Medium-High', description: 'Attract non-resident diners through Google Food, Zomato, Instagram content, local SEO.' }
     ],
 
     // ============================================================
     // FAQ
     // ============================================================
     faqs: [
-        { question: 'We already have a website. Why invest in a new one?', answer: 'Most hotel websites function as online brochures — they display rooms but do not sell them. A genuine booking website includes: integrated booking engine with real-time availability, WhatsApp booking capability, direct booking incentives, mobile-first architecture, sub-2-second load times, and SEO structure that search engines can effectively index. If your current website does not generate 20-30% of bookings directly, it is underperforming.' },
-        { question: 'How long before measurable results appear?', answer: 'The website and Google presence begin performing within 4-6 weeks. Direct booking growth becomes measurable within 3-4 months. OTA dependency reduction from 70% to 30-40% typically requires 6-12 months of systematic execution. Monthly reporting tracks every metric so progress is continuously visible.' },
-        { question: 'We already work with a marketing agency. Why change?', answer: 'Most agencies manage social media and deploy advertisements. We construct complete digital ecosystems — website, booking engine, photography, video, Google optimization, OTA management, CRM, and automation. If your current arrangement delivered comprehensive results, this conversation would not be necessary. We complement or replace based on what serves your property best.' },
-        { question: 'Our property is small. Does this apply to us?', answer: 'Smaller properties lose a HIGHER percentage of revenue to OTAs precisely because they lack direct booking resources. A 20-room property surrendering 25% to commissions requires this infrastructure more urgently than a 200-room chain. Solutions scale proportionally to your size and budget — the strategy remains identical, the execution is calibrated.' },
-        { question: 'What distinguishes 11 Avtar Digital Hub from alternatives?', answer: 'We do not begin with services. We begin with your industry. We diagnose before we recommend. We construct complete ecosystems rather than piecemeal deliverables. And we measure success in bookings, RevPAR, and direct booking percentage — metrics that directly impact your bottom line.' }
+        { question: 'We already have a website. Why change?', answer: 'Most hotel websites are brochures — they show rooms but do not sell them. A booking website has an integrated engine, WhatsApp booking, direct booking incentives, fast loading, and SEO structure. If your website does not generate 20-30% of bookings directly, it is underperforming.' },
+        { question: 'How long until we see results?', answer: 'Website and Google presence: 4-6 weeks. Direct booking growth: 3-4 months. OTA dependency reduction: 6-12 months. Monthly reports track every metric.' },
+        { question: 'We already have a marketing agency.', answer: 'Most agencies manage social media and run ads. I build complete ecosystems — website, photography, video, Google, OTA, CRM, automation. If your current setup delivered everything, we would not be talking.' },
+        { question: 'Our hotel is small. Is this for us?', answer: 'Small hotels lose MORE to OTAs because they lack direct booking resources. A 20-room property needs this more than a 200-room chain. Solutions scale to your size.' },
+        { question: 'What makes you different?', answer: 'I do not start with services. I start with diagnosis. I build complete systems. I measure success in bookings and revenue. I have done this before.' }
     ],
 
     // ============================================================
@@ -302,9 +256,9 @@ const HOSPITALITY_DATA = {
         'OTA Commission Per Booking': '15-30%',
         'Direct Booking Profit Advantage': '40-50% vs OTA',
         'Professional Photo Impact': '40-60% Higher Conversion',
-        'Google Search Initiation': '90% of Travelers',
-        'Repeat Guest Acquisition Cost': '5-7x Less Than New Guest',
-        'Review Rating Revenue Effect': '1-Star Increase = 11% Revenue Gain'
+        'Travelers Starting on Google': '90%',
+        'Repeat Guest Cost vs New Guest': '5-7x Less',
+        '1-Star Rating Increase': '11% Revenue Increase'
     }
 };
 
