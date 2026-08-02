@@ -16,6 +16,96 @@ const HOSPITALITY_DATA = {
     },
 
     // ============================================================
+    // INDUSTRY INTELLIGENCE LAYER™
+    // ============================================================
+    industryIntelligence: {
+        headline: 'Before I Recommend Anything, I Study the Industry. Here Is What the Data Reveals About Hospitality.',
+        marketDynamics: {
+            title: 'Market Dynamics',
+            description: 'The Indian hospitality market is fragmented, seasonal, and increasingly digital. Independent hotels compete against branded chains with larger marketing budgets and OTAs with superior technology. Occupancy swings dramatically between peak and off-peak seasons. The difference between a profitable year and a loss often depends on how well the hotel manages distribution, pricing, and direct guest relationships during shoulder and off-peak periods.',
+            keyPoints: [
+                'Fragmented market — independent hotels dominate volume but chains dominate revenue share',
+                'Extreme seasonality — peak season generates majority of annual profit; off-season tests survival',
+                'OTA consolidation — a few platforms control majority of online distribution',
+                'Rising digital expectations — travelers compare independent properties against chain-standard digital experiences',
+                'Growing domestic travel market creating new demand across segments'
+            ]
+        },
+        industryChallenges: {
+            title: 'Industry Challenges',
+            description: 'The structural challenges facing hospitality are not new, but they have intensified as digital adoption has accelerated. Hotels that built their business before digital transformed buying behaviour now operate with legacy systems, legacy thinking, and legacy dependencies that erode profitability.',
+            keyPoints: [
+                'OTA dependency — most independent hotels source majority bookings through commission-charging intermediaries',
+                'Digital visibility gap — many properties are invisible at the critical moment travelers search',
+                'Trust deficit — weak digital presence undermines property quality perception',
+                'Guest relationship surrender — OTAs own guest data, booking experience, and loyalty',
+                'Pricing pressure — commoditization on OTA platforms forces rate competition over value differentiation',
+                'Technology underinvestment — websites, booking engines, and CRM systems lag behind guest expectations'
+            ]
+        },
+        buyingBehaviour: {
+            title: 'Buying Behaviour',
+            description: 'The modern hotel booking journey is non-linear, multi-platform, and trust-dependent. Travelers touch 8-12 information sources before booking. They judge properties in seconds based on visual quality. They book where they feel safest — not necessarily where the property is best. Understanding this psychology is the foundation of every recommendation that follows.',
+            keyPoints: [
+                'Search begins on Google for approximately 90% of travelers',
+                '8-12 touchpoints across platforms before a booking decision',
+                'Visual judgment happens in under 3 seconds — professional photography is not optional',
+                'Review quantity, quality, and recency collectively determine trust',
+                'Mobile devices account for 60-70% of travel searches',
+                'Booking anxiety peaks at the payment stage — any friction triggers abandonment',
+                'Post-stay goodwill window is 48 hours — the critical period for review generation and re-engagement'
+            ]
+        },
+        revenueDrivers: {
+            title: 'Revenue Drivers',
+            description: 'Hotel revenue is multi-stream but room revenue dominates. The profitability of room revenue, however, depends entirely on booking source. Direct bookings generate full margin. OTA bookings surrender 15-30%. Understanding this margin differential is central to every strategic decision in the ecosystem.',
+            keyPoints: [
+                'Room revenue: 60-70% of total — margin varies dramatically by booking source',
+                'Food & Beverage: 15-20% — restaurant can serve as separate profit centre when marketed to non-resident diners',
+                'Events & Banquets: 10-15% — weddings and corporate events generate highest margin per square foot',
+                'Ancillary: 5-10% — transfers, spa, upgrades, late checkout — consistently under-captured',
+                'Direct booking margin advantage: full revenue retained vs 15-30% OTA commission',
+                'Repeat guests cost substantially less to acquire than new guests'
+            ]
+        },
+        operationalConstraints: {
+            title: 'Operational Constraints',
+            description: 'Hotels operate with perishable inventory, fixed costs, and variable demand. These constraints are not temporary — they are structural features of the business model. Digital systems cannot eliminate seasonality, but they can reduce its financial impact by enabling off-season demand generation through owned channels.',
+            keyPoints: [
+                'Perishable inventory — unsold room tonight is revenue lost permanently',
+                'Fixed cost base — staff, utilities, maintenance continue regardless of occupancy',
+                'Seasonality exposure — peak season profitability masks off-season structural weakness',
+                'Multi-platform complexity — managing availability and rates across website, OTAs, and GDS simultaneously',
+                'Staff dependency — service quality varies by individual, shift, and season',
+                'Capital constraints — renovation, technology, and marketing compete for limited investment'
+            ]
+        },
+        digitalMaturityLevel: {
+            title: 'Digital Maturity Level',
+            description: 'Most independent hotels in India operate at Level 1 or 2 on the digital maturity scale. They have basic digital presence — a website, some OTA listings, maybe social media. But they lack the integrated systems, automation, and data capability that characterize digitally mature hospitality businesses. This maturity gap is the opportunity.',
+            levels: [
+                { level: 'Level 1 — Basic Presence', characteristics: 'Brochure website. Incomplete Google profile. OTA listings with minimal content. No booking engine. No guest database.' },
+                { level: 'Level 2 — Active but Fragmented', characteristics: 'Website with some booking capability. Active on 2-3 OTAs. Social media presence exists but inconsistent. No channel manager. No automation.' },
+                { level: 'Level 3 — Integrated', characteristics: 'Booking engine integrated with channel manager. Google presence actively managed. Review generation systematic. Basic CRM. Multiple digital channels operating.' },
+                { level: 'Level 4 — Optimized', characteristics: 'Direct booking percentage significant. Guest CRM with automation. Multi-platform presence managed cohesively. Analytics driving decisions.' },
+                { level: 'Level 5 — Leading', characteristics: 'Direct-dominant booking mix. Full automation across guest journey. Data-driven revenue management. Category leadership in digital presence.' }
+            ],
+            industryAverage: 'Most independent hotels operate at Level 1 or 2. The gap between current state and Level 4 represents the revenue opportunity the Guest Conversion Ecosystem™ addresses.'
+        },
+        competitivePressure: {
+            title: 'Competitive Pressure',
+            description: 'Hotels face competition from multiple directions — not just other hotels. OTAs compete for guest relationships. Alternate accommodations compete for leisure travelers. Branded chains compete with superior digital infrastructure. The hotel that treats only other hotels as competition is missing the full threat landscape.',
+            keyPoints: [
+                'Direct competitors — hotels in same location, category, and price range',
+                'OTAs as competitors — they compete for guest relationship, data, and loyalty',
+                'Alternate accommodations — Airbnb, vacation rentals, serviced apartments for extended stays',
+                'Branded chains — superior digital infrastructure, loyalty programs, and marketing budgets',
+                'Platform competition — hotels now compete on Google, Instagram, and YouTube, not just on OTAs'
+            ]
+        }
+    },
+
+    // ============================================================
     // INDUSTRY UNDERSTANDING
     // ============================================================
     understanding: 'A hotel is not a product business. It is a perishable inventory business with extreme seasonality, complex multi-channel distribution, and a customer journey spanning eight to twelve touchpoints before a single booking decision.\n\nA room unsold tonight is revenue gone forever. There is no warehouse. There is no restocking. Fixed costs continue whether occupancy is at 20% or 90%. This single reality — perishable inventory with fixed overhead — shapes every financial and operational decision in hospitality.\n\nI have studied how travelers actually book hotels. Not how marketing textbooks claim they book. Not how agencies assume they book. They search Google. They scroll photos. They compare prices across platforms. They read reviews. They check Instagram. They watch YouTube room tours. They ask for recommendations on WhatsApp. Somewhere in that journey, they decide.\n\nIf the hotel is missing at any of those touchpoints — or present but looking unprofessional — the decision happens without it. The property might be excellent. The digital representation failed. In hospitality, travelers judge what they can see, not what exists.',
@@ -137,7 +227,7 @@ const HOSPITALITY_DATA = {
     },
 
     // ============================================================
-    // WEBSITE ARCHITECTURE — Fully Rebuilt
+    // WEBSITE ARCHITECTURE
     // ============================================================
     websiteArchitecture: {
         headline: 'Your Website Is Not a Brochure. It Is Your Highest-Margin Booking Channel. It Should Be Built That Way.',
@@ -193,7 +283,7 @@ const HOSPITALITY_DATA = {
     },
 
     // ============================================================
-    // PLATFORM ECOSYSTEM — Fully Rebuilt
+    // PLATFORM ECOSYSTEM
     // ============================================================
     platformEcosystem: {
         headline: 'Every Platform Must Earn Its Place. Your Guests Interact With Your Hotel Across Dozens of Digital Touchpoints. Each One Either Builds Your Business or Leaks Your Revenue.',
@@ -206,7 +296,7 @@ const HOSPITALITY_DATA = {
             platforms: [
                 { name: 'Google Search & Maps', role: 'The primary discovery engine. The majority of hotel searches begin here. Presence in the Map Pack and organic results determines visibility at the critical first step of the guest journey.', guestInteraction: 'Traveler searches destination, sees hotel listing with photos and rating, clicks for details.' },
                 { name: 'Google Hotel Ads', role: 'Direct booking rates displayed directly in search results. Captures high-intent travelers at the exact moment of search and routes them to the hotel booking engine instead of OTAs.', guestInteraction: 'Traveler sees direct rate alongside OTA rates in search results, chooses to book direct.' },
-                { name: 'Instagram', role: 'Visual discovery platform. Travelers browse destinations and properties through imagery and short-form video. Professional photography presence influences consideration before active search begins.', guestInteraction: 'Traveler discovers property through feed, Reels, Stories, or location/ hashtag search while browsing travel content.' },
+                { name: 'Instagram', role: 'Visual discovery platform. Travelers browse destinations and properties through imagery and short-form video. Professional photography presence influences consideration before active search begins.', guestInteraction: 'Traveler discovers property through feed, Reels, Stories, or location/hashtag search while browsing travel content.' },
                 { name: 'YouTube', role: 'Video discovery platform. Room tours, property showcases, and destination content capture travelers during extended research sessions where they seek detailed information.', guestInteraction: 'Traveler watches room tour or property video during research phase, forming detailed impression before booking.' },
                 { name: 'TripAdvisor', role: 'Review-based discovery. Travelers researching destinations encounter the hotel through ratings, ranking, traveler photography, and detailed reviews.', guestInteraction: 'Traveler compares ratings, reads reviews, and views traveler photos before shortlisting properties.' },
                 { name: 'OTAs as Discovery', role: 'Many travelers use OTAs as their primary search tool for accommodation — browsing options even if they eventually book through another channel.', guestInteraction: 'Traveler browses destination on Booking.com, MakeMyTrip, or Agoda to see what is available and compare options.' }
@@ -489,14 +579,87 @@ const HOSPITALITY_DATA = {
     // STATS
     // ============================================================
     stats: {
-        'OTA Commission Range': '15-30% per booking',
-        'Direct Booking Margin Advantage': 'Full revenue retained versus commission paid to intermediaries',
-        'Professional Photo Impact on Conversion': 'Significant and measurable improvement over amateur photography',
-        'Travelers Starting Hotel Search on Google': 'Approximately 90%',
-        'Average Information Sources Before Booking': '8-12 touchpoints across platforms',
-        'Repeat Guest vs New Guest Acquisition Cost': 'Past guests cost substantially less to re-engage than acquiring new guests',
-        'Review Rating Revenue Impact': 'Rating improvement correlates directly with revenue performance',
-        'Mobile Share of Travel Searches': '60-70% of travel-related searches occur on mobile devices'
+        rule: 'Statistics provide industry context and validate the diagnosis. Every statistic must connect to a specific point made on this page. Sources are industry research, observed patterns across hospitality businesses, and publicly available travel behaviour data. Statistics are presented to educate and create context — never to fear-monger or exaggerate. Where a statistic represents an observed pattern rather than a formal study, it is presented as observation rather than absolute fact.',
+        statsList: {
+            'OTA Commission Range': '15-30% per booking',
+            'Direct Booking Margin Advantage': 'Full revenue retained versus commission paid to intermediaries',
+            'Professional Photo Impact on Conversion': 'Significant and measurable improvement over amateur photography',
+            'Travelers Starting Hotel Search on Google': 'Approximately 90%',
+            'Average Information Sources Before Booking': '8-12 touchpoints across platforms',
+            'Repeat Guest vs New Guest Acquisition Cost': 'Past guests cost substantially less to re-engage than acquiring new guests',
+            'Review Rating Revenue Impact': 'Rating improvement correlates directly with revenue performance',
+            'Mobile Share of Travel Searches': '60-70% of travel-related searches occur on mobile devices'
+        }
+    },
+
+    // ============================================================
+    // VALIDATION FRAMEWORK
+    // ============================================================
+    validation: {
+        headline: 'How This Diagnosis Was Validated — And How It Should Be Tested for Your Property',
+        philosophy: 'Every diagnosis must be validated against reality before solutions are implemented. The frameworks and recommendations on this page are derived from studying hospitality businesses, analyzing guest behaviour patterns, and identifying what actually drives revenue versus what agencies claim drives revenue. But every hotel is different. These validation points ensure the diagnosis fits your specific property before action begins.',
+
+        marketValidation: {
+            title: 'Market Validation',
+            description: 'Confirming that the industry-level diagnosis applies to your specific market, location, and competitive environment.',
+            checks: [
+                'Industry trends verified against your specific destination and category',
+                'Guest behaviour patterns confirmed for your target traveler segment — leisure, business, event, or mixed',
+                'Competitive digital presence benchmarked — how do your direct competitors actually perform on Google, OTAs, and social media?',
+                'Seasonality patterns mapped to your specific occupancy data — not generic assumptions'
+            ]
+        },
+
+        businessValidation: {
+            title: 'Business Validation',
+            description: 'Confirming that the revenue model and cost structure diagnosis matches your actual business operations.',
+            checks: [
+                'Revenue model understood — what percentage actually comes from rooms, F&B, events, and ancillary?',
+                'OTA dependency quantified — what percentage of bookings flow through each channel, and at what commission rate?',
+                'Direct booking baseline established — what percentage currently books direct, and through which channels?',
+                'Cost leaks identified — where is commission, inefficiency, or missed opportunity costing measurable revenue?',
+                'Guest acquisition cost calculated — what does it currently cost to acquire a new guest versus re-engage a past guest?'
+            ]
+        },
+
+        customerValidation: {
+            title: 'Customer Validation',
+            description: 'Confirming that the customer psychology and journey diagnosis matches how your actual guests behave.',
+            checks: [
+                'Guest decision journey mapped — how do your actual guests discover, evaluate, and book?',
+                'Booking triggers identified — what specifically causes your guests to choose your property?',
+                'Trust signals verified — what do your guests cite as reasons for choosing or rejecting your property?',
+                'Abandonment points identified — where in the booking process do potential guests drop off?',
+                'Post-stay behaviour understood — what percentage return, refer, or review?'
+            ]
+        },
+
+        digitalValidation: {
+            title: 'Digital Validation',
+            description: 'Confirming the current state of every digital asset and platform before recommending changes.',
+            checks: [
+                'Website performance measured — speed, mobile responsiveness, booking engine functionality, conversion rate',
+                'Google presence benchmarked — Map Pack ranking, review quantity and rating, profile completeness',
+                'OTA presence audited — listing quality, photo count, description accuracy, review performance',
+                'Social media assessed — platform presence, content quality, engagement levels, consistency',
+                'Existing technology evaluated — booking engine, channel manager, CRM, analytics, automation tools'
+            ]
+        },
+
+        implementationValidation: {
+            title: 'Implementation Validation',
+            description: 'Confirming that the recommended solution sequence is realistic for your property\'s resources, timeline, and capacity.',
+            checks: [
+                'Solution sequence prioritized based on urgency and impact — what must happen first?',
+                'Dependencies mapped — what must exist before other components can be implemented?',
+                'Resource requirements assessed — budget, team capacity, timeline, technology requirements',
+                'Quick wins identified — what can show results in the first 30-60 days to build momentum?',
+                'Measurement framework established — how will success be tracked at each phase of implementation?',
+                'Risk factors identified — what could delay or derail implementation, and how are those risks mitigated?'
+            ]
+        },
+
+        validationPrinciple: 'Diagnosis without validation is assumption. Every recommendation on this page represents a hypothesis about what will improve your hotel\'s digital performance. The validation framework tests each hypothesis against the reality of your property, market, guests, and resources before implementation begins. What works across the industry provides direction. What works for your specific property determines execution.'
     }
 };
 
