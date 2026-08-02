@@ -1,0 +1,190 @@
+# ============================================================
+# 11 AVTAR DIGITAL HUB
+# Apache Server Configuration
+# Industry Growth Intelligence System™
+# ============================================================
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Force HTTPS (Security)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Force WWW (or non-WWW — choose one and uncomment)
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Remove trailing slashes (SEO — avoid duplicate content)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# ============================================================
+# SPA ROUTING — All requests to index.html
+# ============================================================
+# This is critical for hash-based SPA to work correctly
+# Even though we use hash routing, this ensures clean fallback
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# ============================================================
+# CACHING HEADERS — Performance Optimization
+# ============================================================
+
+# 1 YEAR CACHE — Static assets with versioning
+<FilesMatch "\.(css|js|woff2?|ttf|eot)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# 1 YEAR CACHE — Images and icons
+<FilesMatch "\.(png|jpg|jpeg|gif|svg|ico|webp)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# 1 DAY CACHE — HTML files (shorter since content may update)
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=86400, must-revalidate"
+</FilesMatch>
+
+# NO CACHE — Service Worker and Manifest
+<FilesMatch "^(sw\.js|manifest\.json)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
+
+# ============================================================
+# GZIP COMPRESSION — Reduce file sizes
+# ============================================================
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML, fonts
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE application/font-woff
+    AddOutputFilterByType DEFLATE application/font-woff2
+    
+    # Remove browser bugs for legacy browsers
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+</IfModule>
+
+# ============================================================
+# SECURITY HEADERS
+# ============================================================
+
+# Protect against XSS attacks
+Header always set X-XSS-Protection "1; mode=block"
+
+# Prevent MIME type sniffing
+Header always set X-Content-Type-Options "nosniff"
+
+# Control referrer information
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Permissions Policy (restrict browser features)
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
+# Content Security Policy (adjust as needed)
+# Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://wa.me;"
+
+# HSTS — Force HTTPS for 1 year (uncomment when SSL is confirmed)
+# Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+# ============================================================
+# CUSTOM ERROR PAGES
+# ============================================================
+
+# 404 — Page Not Found
+ErrorDocument 404 /index.html
+
+# 500 — Internal Server Error
+ErrorDocument 500 /index.html
+
+# ============================================================
+# PREVENT DIRECTORY LISTING
+# ============================================================
+Options -Indexes
+
+# ============================================================
+# PREVENT ACCESS TO HIDDEN FILES
+# ============================================================
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ============================================================
+# PREVENT ACCESS TO SENSITIVE FILES
+# ============================================================
+<FilesMatch "\.(env|git|md|yml|yaml|lock|log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ============================================================
+# ALLOW CROSS-ORIGIN FOR FONTS (CDN compatibility)
+# ============================================================
+<FilesMatch "\.(ttf|otf|eot|woff2?)$">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+# ============================================================
+# BROWSER CACHING — Expires Headers (Fallback)
+# ============================================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images — 1 year
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    
+    # CSS, JavaScript — 1 year
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    
+    # Fonts — 1 year
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+    ExpiresByType font/opentype "access plus 1 year"
+    
+    # HTML — 1 day
+    ExpiresByType text/html "access plus 1 day"
+    
+    # JSON — 1 hour
+    ExpiresByType application/json "access plus 1 hour"
+</IfModule>
+
+# ============================================================
+# DEFAULT CHARACTER SET
+# ============================================================
+AddDefaultCharset UTF-8
+
+# ============================================================
+# SERVER SIGNATURE OFF (Security)
+# ============================================================
+ServerSignature Off
+
+# ============================================================
+# 11 AVTAR DIGITAL HUB
+# Industry Growth Intelligence System™
+# END OF CONFIGURATION
+# ============================================================

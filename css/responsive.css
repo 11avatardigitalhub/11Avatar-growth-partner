@@ -1,0 +1,549 @@
+/* ============================================================
+   11 AVTAR DIGITAL HUB
+   Responsive Styles — All Breakpoints
+   Industry Growth Intelligence System™
+   Mobile-First: 320px → 480px → 768px → 1024px → 1280px → 1440px+
+   ============================================================ */
+
+/* ============================================================
+   BASE MOBILE STYLES (320px - 479px)
+   Applied by default, overridden at larger breakpoints
+   ============================================================ */
+
+/* Typography scaling for small screens */
+@media (max-width: 479px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+    h4 { font-size: 1rem; }
+    
+    .section-title { font-size: 1.6rem; }
+    .section-sub { font-size: 0.88rem; }
+    
+    .hero-title { font-size: 1.8rem; }
+    .hero-sub { font-size: 0.88rem; }
+}
+
+/* ============================================================
+   MOBILE (480px - 767px)
+   ============================================================ */
+@media (max-width: 767px) {
+    /* Container */
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Navigation */
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .nav-inner {
+        padding: 0 16px;
+    }
+
+    /* Grids collapse to single column */
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .grid-auto {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sections */
+    section {
+        padding: 35px 0;
+    }
+
+    .section-header {
+        margin-bottom: 24px;
+    }
+
+    /* Cards */
+    .card {
+        padding: 16px 14px;
+    }
+
+    /* Proposal Panel */
+    .proposal-panel {
+        position: static;
+        margin-top: 20px;
+    }
+
+    /* Quantified Table */
+    .quant-table {
+        font-size: 0.7rem;
+    }
+    .quant-table thead th,
+    .quant-table tbody td {
+        padding: 8px 10px;
+    }
+
+    /* Checklist */
+    .checklist-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4px;
+    }
+    .check-item {
+        font-size: 0.72rem;
+        padding: 6px 8px;
+    }
+
+    /* Tags */
+    .tag-group {
+        gap: 6px;
+    }
+    .tag {
+        font-size: 0.7rem;
+        padding: 5px 12px;
+    }
+    .tag.lg {
+        font-size: 0.78rem;
+        padding: 8px 16px;
+    }
+
+    /* Hero */
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    .hero-content {
+        order: 1;
+    }
+    .hero-visual {
+        order: 0;
+    }
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .stat {
+        min-width: 70px;
+    }
+    .stat-num {
+        font-size: 1.5rem;
+    }
+
+    /* Industry Grid */
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .industry-card {
+        padding: 14px 10px;
+    }
+    .industry-card-icon {
+        font-size: 1.5rem;
+    }
+    .industry-card-name {
+        font-size: 0.8rem;
+    }
+
+    /* Steps */
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .steps-grid::before {
+        display: none;
+    }
+    .step-number {
+        width: 52px;
+        height: 52px;
+        font-size: 1.2rem;
+    }
+
+    /* Philosophy Box */
+    .philosophy-box {
+        padding: 24px 18px;
+    }
+    .philosophy-box h2 {
+        font-size: 1.4rem;
+    }
+    .philosophy-box .pillars {
+        gap: 12px;
+    }
+
+    /* Deliverables */
+    .deliverable-item {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 40px 0;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 30px;
+    }
+    .footer-grid {
+        gap: 24px;
+    }
+    .footer-bottom {
+        text-align: center;
+    }
+
+    /* Problem Cards */
+    .problem-card {
+        padding: 14px 16px;
+    }
+
+    /* Back to top */
+    .back-to-top {
+        bottom: 16px;
+        right: 16px;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* ============================================================
+   TABLET (768px - 1023px)
+   ============================================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Container */
+    .container {
+        padding: 0 24px;
+    }
+
+    /* Grids — 2 columns */
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    /* Navigation */
+    .nav-links {
+        gap: 16px;
+    }
+    .nav-link {
+        font-size: 0.75rem;
+    }
+
+    /* Hero */
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    /* Industry Grid */
+    .industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Steps */
+    .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .steps-grid::before {
+        display: none;
+    }
+
+    /* Sections */
+    section {
+        padding: 45px 0;
+    }
+
+    /* Checklist */
+    .checklist-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Proposal Panel */
+    .proposal-panel {
+        position: static;
+    }
+
+    /* Quantified Table */
+    .quant-table {
+        font-size: 0.75rem;
+    }
+}
+
+/* ============================================================
+   DESKTOP (1024px - 1279px)
+   ============================================================ */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* Grids */
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(3, 1fr); }
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    }
+
+    /* Hero */
+    .hero-container {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 50px;
+    }
+
+    /* Industry Grid */
+    .industries-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Steps */
+    .steps-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* Checklist */
+    .checklist-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ============================================================
+   LARGE DESKTOP (1280px - 1439px)
+   ============================================================ */
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* ============================================================
+   EXTRA LARGE DESKTOP (1440px+)
+   ============================================================ */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1340px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .checklist-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* ============================================================
+   DARK MODE SUPPORT (Optional — Browser Preference)
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+    /* 
+       NOTE: 11 Avtar Digital Hub uses a luxury light theme.
+       Dark mode is NOT the primary experience.
+       This block is reserved for future dark mode if needed.
+    */
+    
+    /* Uncomment to enable dark mode:
+    :root {
+        --light: #1A1A1A;
+        --light-secondary: #242424;
+        --card-bg: #2A2A2A;
+        --text: #E8E4DD;
+        --text-secondary: #B0A99F;
+        --text-muted: #8A8A8A;
+    }
+    */
+}
+
+/* ============================================================
+   REDUCED MOTION (Accessibility)
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ============================================================
+   HIGH CONTRAST MODE (Accessibility)
+   ============================================================ */
+@media (prefers-contrast: high) {
+    :root {
+        --gold: #B8860B;
+        --gold-border: rgba(184, 134, 11, 0.5);
+        --text: #000000;
+        --text-secondary: #1A1A1A;
+        --text-muted: #333333;
+    }
+    
+    .card {
+        border: 2px solid #000;
+    }
+    
+    .btn-gold {
+        border: 2px solid #000;
+    }
+}
+
+/* ============================================================
+   PRINT STYLES (Override)
+   ============================================================ */
+@media print {
+    * {
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .nav,
+    .footer,
+    .back-to-top,
+    .pwa-install-banner,
+    .mobile-menu-btn,
+    .mobile-menu,
+    .btn-wa,
+    .btn-gold {
+        display: none !important;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    section {
+        padding: 15px 0;
+        page-break-inside: avoid;
+    }
+    
+    .card,
+    .problem-card,
+    .proposal-panel {
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+    
+    .quant-table {
+        font-size: 0.7rem;
+    }
+    
+    .quant-table thead th {
+        background: #eee;
+        color: #000;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    .check-item {
+        border: 1px solid #ccc;
+    }
+    
+    .check-item.selected {
+        background: #eee;
+    }
+}
+
+/* ============================================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ============================================================ */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .check-item {
+        padding: 10px 14px;
+        min-height: 44px;
+    }
+    
+    .btn {
+        min-height: 44px;
+    }
+    
+    .nav-link {
+        padding: 8px 4px;
+    }
+    
+    /* Disable hover effects that don't work on touch */
+    .card:hover {
+        transform: none;
+    }
+    
+    .card:active {
+        transform: scale(0.98);
+    }
+    
+    /* Scrollable tables hint */
+    .quant-table-wrapper {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* ============================================================
+   LANDSCAPE MOBILE OPTIMIZATION
+   ============================================================ */
+@media (max-width: 900px) and (orientation: landscape) {
+    .hero-section {
+        padding: 20px 0 40px;
+        min-height: auto;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .hero-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* ============================================================
+   FOLDABLE / DUAL SCREEN DEVICES
+   ============================================================ */
+@media (screen-spanning: single-fold-vertical) {
+    .container {
+        max-width: 100%;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================
+   11 AVTAR DIGITAL HUB
+   END OF RESPONSIVE STYLES
+   ============================================================ */
