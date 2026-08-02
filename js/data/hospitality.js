@@ -6,7 +6,7 @@ const HOSPITALITY_DATA = {
     signature: 'Guest Conversion Ecosystem™',
 
     // ============================================================
-    // HOOK — Rebuilt for maximum impact
+    // HOOK
     // ============================================================
     hook: {
         headline: 'Last Night, a Guest Tried to Book Your Hotel Directly. They Ended Up on Booking.com. You Paid 25% Commission. Want to Know Why?',
@@ -137,7 +137,7 @@ const HOSPITALITY_DATA = {
     },
 
     // ============================================================
-    // WEBSITE ARCHITECTURE — Completely rebuilt
+    // WEBSITE ARCHITECTURE — Fully Rebuilt
     // ============================================================
     websiteArchitecture: {
         headline: 'Your Website Is Not a Brochure. It Is Your Highest-Margin Booking Channel. It Should Be Built That Way.',
@@ -193,59 +193,103 @@ const HOSPITALITY_DATA = {
     },
 
     // ============================================================
-    // PLATFORM ECOSYSTEM — Completely rebuilt
+    // PLATFORM ECOSYSTEM — Fully Rebuilt
     // ============================================================
     platformEcosystem: {
-        headline: 'Every Platform Must Earn Its Place by Solving a Specific Business Problem. No Platform Exists Because It Is Popular.',
-        philosophy: 'Most hotels maintain presence on platforms without clarity about what each platform is supposed to achieve. Instagram exists because "we should be on social media." OTAs exist because "that is where bookings come from." Google exists accidentally through whatever information happens to be there.\n\nIn the Guest Conversion Ecosystem™, every platform serves a specific function in the guest journey. Platforms are organized by the business problem they solve — Discovery, Trust, Conversion, or Retention. If a platform serves none of these functions for a specific hotel\'s guest profile, it does not belong in the ecosystem.',
-        stages: {
-            discovery: {
-                title: 'Discovery Platforms',
-                businessGoal: 'Ensure the hotel is found wherever target guests search for accommodation in the destination.',
-                description: 'These platforms capture travelers during research and discovery — before they have decided where to book. Presence here determines whether the hotel enters the consideration set or is never evaluated.',
-                platforms: [
-                    { name: 'Google Search & Maps', role: 'The primary discovery engine. The majority of hotel searches begin here. Presence in Map Pack and organic results determines visibility at the critical first step of the guest journey.' },
-                    { name: 'Google Hotel Ads', role: 'Direct booking rates displayed in search results. Captures high-intent travelers at the exact moment of search and routes them to the hotel booking engine instead of OTAs.' },
-                    { name: 'Instagram', role: 'Visual discovery platform. Travelers browse destinations and properties through imagery. Professional photography presence here influences consideration before active search begins.' },
-                    { name: 'YouTube', role: 'Video discovery platform. Room tours, property showcases, and destination content capture travelers during extended research sessions.' },
-                    { name: 'TripAdvisor', role: 'Review-based discovery. Travelers researching destinations encounter the hotel through ratings, reviews, and traveler photography.' }
-                ]
-            },
-            trust: {
-                title: 'Trust Platforms',
-                businessGoal: 'Provide every signal a traveler needs to feel confident choosing the property.',
-                description: 'These platforms host the evidence travelers use to evaluate legitimacy and quality. Performance here directly influences conversion rate — how many researchers become bookers.',
-                platforms: [
-                    { name: 'Google Business Profile', role: 'The trust anchor. Reviews, photos, Q&A, and active management signal legitimacy. Often the first or second touchpoint after initial search.' },
-                    { name: 'TripAdvisor', role: 'Dedicated review platform. Detailed traveler reviews with photography. Ranking relative to competitive set influences consideration among comparison-oriented travelers.' },
-                    { name: 'OTAs (Booking.com, MakeMyTrip, Goibibo)', role: 'Trust through platform association. Travelers trust the OTA\'s verification, review system, and booking protection. Complete, professional listings perform significantly better than minimal ones.' },
-                    { name: 'Hotel Website', role: 'The ultimate trust destination. A professional, fast, informative website confirms that the property is legitimate, well-managed, and worthy of direct booking.' }
-                ]
-            },
-            conversion: {
-                title: 'Conversion Platforms',
-                businessGoal: 'Make booking completion fast, easy, and compelling through direct channels.',
-                description: 'These platforms handle the transaction itself. Performance here determines booking completion rate and direct-versus-OTA booking mix.',
-                platforms: [
-                    { name: 'Direct Booking Website', role: 'The highest-margin booking channel. Booking engine integrated with real-time inventory. Optimized for mobile completion. Clear direct booking advantages communicated.' },
-                    { name: 'WhatsApp Business', role: 'Conversational booking channel. Captures guests who prefer messaging over forms. Enables booking via payment link within a familiar communication environment.' },
-                    { name: 'Phone & Email', role: 'Traditional direct channels. Still relevant for corporate bookings, group inquiries, and guests who prefer human confirmation before committing.' },
-                    { name: 'OTAs (as booking channel)', role: 'Conversion channel for travelers who discovered through OTA search. While commission-bearing, a professionally optimized listing captures bookings that would otherwise go to competitors.' }
-                ]
-            },
-            retention: {
-                title: 'Retention Platforms',
-                businessGoal: 'Maintain guest relationships between stays and drive repeat bookings at substantially lower acquisition cost.',
-                description: 'These platforms manage the ongoing relationship. Performance here determines repeat guest ratio — the single most profitable revenue source in hospitality.',
-                platforms: [
-                    { name: 'WhatsApp', role: 'Direct communication channel. Post-stay follow-up, review requests, re-engagement offers, and personalized recognition delivered through the platform guests already use daily.' },
-                    { name: 'Email', role: 'Structured communication channel. Newsletters, seasonal offers, loyalty program updates, and longer-form content delivered to guest inboxes.' },
-                    { name: 'CRM System', role: 'The relationship database. Captures every guest, every stay, every preference. Enables personalized communication and recognition that builds genuine loyalty.' },
-                    { name: 'Instagram & Facebook', role: 'Passive retention channels. Consistent presence keeps the property in guest awareness between stays. Past guests who follow are continuously exposed to content that maintains relationship warmth.' }
-                ]
-            }
+        headline: 'Every Platform Must Earn Its Place. Your Guests Interact With Your Hotel Across Dozens of Digital Touchpoints. Each One Either Builds Your Business or Leaks Your Revenue.',
+        philosophy: 'Most hotels accumulate platforms — a little Instagram, some Google Ads, an email list somewhere. But they never organize them by business function. So they never know what is working, what is missing, or what is leaking. \n\nThe Guest Conversion Ecosystem™ assigns every platform to a specific job: Discovery, Trust, Conversion, or Retention. If a platform cannot justify its role in the guest journey, it does not belong. The question is never "Should we be on this platform?" The question is "What business problem does this platform solve, and is it the best platform to solve it?"',
+
+        discovery: {
+            title: 'Discovery Platforms — Where Guests Find You',
+            businessGoal: 'Appear wherever travelers search for accommodation in your destination. If the hotel is not visible during discovery, it will never be evaluated.',
+            description: 'These platforms capture travelers during research and discovery — before they have decided where to book. Presence here determines whether the hotel enters the consideration set or is never seen.',
+            platforms: [
+                { name: 'Google Search & Maps', role: 'The primary discovery engine. The majority of hotel searches begin here. Presence in the Map Pack and organic results determines visibility at the critical first step of the guest journey.', guestInteraction: 'Traveler searches destination, sees hotel listing with photos and rating, clicks for details.' },
+                { name: 'Google Hotel Ads', role: 'Direct booking rates displayed directly in search results. Captures high-intent travelers at the exact moment of search and routes them to the hotel booking engine instead of OTAs.', guestInteraction: 'Traveler sees direct rate alongside OTA rates in search results, chooses to book direct.' },
+                { name: 'Instagram', role: 'Visual discovery platform. Travelers browse destinations and properties through imagery and short-form video. Professional photography presence influences consideration before active search begins.', guestInteraction: 'Traveler discovers property through feed, Reels, Stories, or location/ hashtag search while browsing travel content.' },
+                { name: 'YouTube', role: 'Video discovery platform. Room tours, property showcases, and destination content capture travelers during extended research sessions where they seek detailed information.', guestInteraction: 'Traveler watches room tour or property video during research phase, forming detailed impression before booking.' },
+                { name: 'TripAdvisor', role: 'Review-based discovery. Travelers researching destinations encounter the hotel through ratings, ranking, traveler photography, and detailed reviews.', guestInteraction: 'Traveler compares ratings, reads reviews, and views traveler photos before shortlisting properties.' },
+                { name: 'OTAs as Discovery', role: 'Many travelers use OTAs as their primary search tool for accommodation — browsing options even if they eventually book through another channel.', guestInteraction: 'Traveler browses destination on Booking.com, MakeMyTrip, or Agoda to see what is available and compare options.' }
+            ]
         },
-        ecosystemPrinciple: 'No platform exists for its own sake. Every platform is assigned a specific business function. Platforms are evaluated continuously based on whether they are fulfilling that function. When guest behaviour shifts, the ecosystem shifts with it.'
+
+        trust: {
+            title: 'Trust Platforms — Where Guests Decide If You Are Worth the Risk',
+            businessGoal: 'Provide every signal a traveler needs to feel confident choosing the property. Reduce perceived risk at every evaluation touchpoint.',
+            description: 'These platforms host the evidence travelers use to evaluate legitimacy and quality. Performance here directly influences conversion rate — how many researchers become bookers.',
+            platforms: [
+                { name: 'Google Business Profile', role: 'The trust anchor of local search. Reviews, professional photos, Q&A responses, and active management collectively signal legitimacy and attentiveness.', guestInteraction: 'Traveler reads reviews, views photos, checks Q&A, and assesses whether the hotel is professionally managed.' },
+                { name: 'TripAdvisor', role: 'Dedicated review platform with detailed traveler feedback and photography. Ranking relative to competitive set influences consideration among comparison-oriented travelers.', guestInteraction: 'Traveler reads detailed reviews, examines traveler-submitted photos, and compares ranking against other properties in the destination.' },
+                { name: 'OTAs — Review Sections', role: 'Verified reviews from guests who booked through the platform. Travelers trust these reviews because they confirm actual stays.', guestInteraction: 'Traveler reads verified reviews on Booking.com or MakeMyTrip, filtering by recent stays and specific concerns.' },
+                { name: 'Hotel Website', role: 'The ultimate trust destination. A professional, fast, informative, and secure website confirms that the property is legitimate, well-managed, and worthy of direct booking.', guestInteraction: 'Traveler visits website to verify property quality, see official photos, check policies, and confirm legitimacy before booking.' },
+                { name: 'Instagram — Social Proof', role: 'Active, engaged social presence with guest-generated content, stories, and consistent posting signals an alive, operating, guest-serving business.', guestInteraction: 'Traveler checks Instagram for recent activity, guest tags, and visual evidence that the property matches its official photography.' }
+            ]
+        },
+
+        social: {
+            title: 'Social Media — Where Guests Experience Your Brand Between Stays',
+            businessGoal: 'Maintain brand presence and visual desirability. Keep the property in guest awareness during the long gaps between trips.',
+            description: 'Social media serves two distinct functions: discovery for new guests and retention for past guests. Content strategy must serve both audiences simultaneously — attracting new travelers while maintaining relationships with those who have already stayed.',
+            platforms: [
+                { name: 'Instagram', role: 'Primary visual brand platform. Aspirational content showcasing the property experience. Guest engagement through Stories, DMs, and comments. Brand building through consistent aesthetic presence.', guestInteraction: 'Past and future guests view content, engage with Stories, share posts, and maintain emotional connection to the property between visits.' },
+                { name: 'Facebook', role: 'Community presence and event visibility. Effective for reaching older demographics. Event promotion, offer sharing, and community engagement.', guestInteraction: 'Guests check events, offers, and community presence. Families and groups use Facebook for event planning and recommendations.' },
+                { name: 'YouTube', role: 'Long-form video content hosting. Room tours, property films, destination guides, and guest testimonial videos live here as evergreen discovery and trust assets.', guestInteraction: 'Travelers watch detailed property content during extended research. Videos continue working as discovery assets indefinitely.' },
+                { name: 'Pinterest', role: 'Travel planning and visual bookmarking. Destination content, wedding inspiration, and property imagery discovered and saved by travelers planning future trips.', guestInteraction: 'Travelers and wedding planners discover and save property imagery to trip-planning boards — often months before making booking decisions.' }
+            ]
+        },
+
+        visual: {
+            title: 'Visual Content — What Guests Judge Before They Book Anything',
+            businessGoal: 'Professional photography and video that communicates property quality, builds booking confidence, and differentiates from competitors.',
+            description: 'Visual content is not a marketing expense. It is the single highest-ROI investment a hotel can make. The same visual assets sell the property across every platform simultaneously — website, Google, OTAs, social media, and content. Amateur visuals lose bookings. Professional visuals earn them.',
+            platforms: [
+                { name: 'Professional Photography', role: 'The foundation of all digital presence. Every room type, every amenity, every angle captured with proper lighting, composition, and spatial accuracy.', guestInteraction: 'Traveler views room photos on website, Google, OTAs — judges property quality within seconds based entirely on what they see.' },
+                { name: 'Video Production', role: 'Room tours, brand films, and property showcases communicate the experiential quality of staying at the property — what photos cannot convey.', guestInteraction: 'Traveler watches video to understand what staying there actually feels like — the space, the atmosphere, the experience beyond static images.' },
+                { name: 'Virtual Tours', role: 'Interactive property exploration that reduces uncertainty for high-consideration bookings — weddings, events, extended stays.', guestInteraction: 'Event planner or wedding client explores spaces remotely, visualizing setup possibilities before making an inquiry.' },
+                { name: 'Drone Content', role: 'Aerial context demonstrating property scale, surrounding landscape, proximity to attractions, and location advantages.', guestInteraction: 'Traveler understands location context, views, property setting, and proximity to beach, mountains, or city landmarks.' },
+                { name: 'Guest-Generated Content', role: 'Authentic visual proof from real guests. Reposted on hotel channels to provide social proof that official photography is accurate.', guestInteraction: 'Traveler sees real guest photos alongside professional ones — confirming that the property matches its representation.' }
+            ]
+        },
+
+        marketing: {
+            title: 'Marketing Channels — Actively Generating Demand and Converting Interest',
+            businessGoal: 'Capture high-intent travelers at the moment of search. Re-engage past guests through direct communication. Recover bookings that would otherwise be lost.',
+            description: 'Marketing channels are the active demand generation layer. Unlike passive discovery platforms, these channels push the hotel in front of travelers who have shown intent or have an existing relationship. Every channel must deliver measurable return against its cost.',
+            platforms: [
+                { name: 'Google Ads (Search & Hotel Ads)', role: 'Capturing booking intent at the exact moment a traveler searches for accommodation in your destination. The highest-intent digital marketing channel in hospitality.', guestInteraction: 'Traveler searching for hotels sees the property with direct booking option alongside OTA listings.' },
+                { name: 'Email Marketing', role: 'Structured communication with past guests who have opted in. Newsletters, seasonal offers, re-engagement campaigns, and loyalty communications.', guestInteraction: 'Past guest receives seasonal offer, destination update, or personalized re-engagement message in their inbox.' },
+                { name: 'WhatsApp Marketing', role: 'Direct, personal communication channel with the highest open and response rates. Booking capability, stay communication, and re-engagement through the platform guests already use daily.', guestInteraction: 'Guest receives personalized offer, books via WhatsApp, receives pre-arrival information, and stays connected post-departure.' },
+                { name: 'Retargeting', role: 'Recovering visitors who left the website without booking. Staying visible during the consideration window through display and social media advertising.', guestInteraction: 'Traveler who visited the website and left sees relevant hotel content while still in the decision-making phase.' }
+            ]
+        },
+
+        automation: {
+            title: 'Automation — Systems That Work While You Run the Hotel',
+            businessGoal: 'Reduce manual work. Ensure consistency across every guest touchpoint. Enable personalization at scale without proportional increase in staff cost.',
+            description: 'Automation is what separates hotels that deliver consistent guest experiences from those that depend on staff memory and manual effort. These systems operate continuously — capturing data, sending communications, managing inventory, and recovering missed opportunities — without requiring daily human attention.',
+            platforms: [
+                { name: 'Guest CRM', role: 'Central database of every guest who stays — regardless of booking source. Contact information, stay history, preferences, special occasions, and communication history in one system.', guestInteraction: 'Guest is recognized on return. Preferences are remembered and delivered. Communication is personalized based on actual history rather than generic templates.' },
+                { name: 'Communication Workflows', role: 'Automated sequences for booking confirmation, pre-arrival information, welcome message, post-stay thank you, review request, and re-engagement.', guestInteraction: 'Guest receives timely, relevant, personalized communication at every stage of the journey — without any staff member manually sending each message.' },
+                { name: 'Channel Manager', role: 'Centralized inventory and rate management synchronizing availability across direct website, all OTAs, and GDS simultaneously.', guestInteraction: 'Guest sees accurate real-time availability and consistent pricing regardless of which platform they check — no overbookings, no rate discrepancies.' },
+                { name: 'Review Automation', role: 'Systematic review requests sent to guests 24-48 hours after checkout — the peak goodwill window when sentiment is highest.', guestInteraction: 'Satisfied guest receives gentle, well-timed prompt to share their experience while memory is fresh and sentiment is positive.' },
+                { name: 'Abandoned Booking Recovery', role: 'Automated detection and follow-up when a traveler starts but does not complete a booking on the hotel website.', guestInteraction: 'Guest who hesitated or was interrupted receives a helpful follow-up message — not pressure, but assistance — often recovering the booking.' },
+                { name: 'Re-engagement Automation', role: 'Automated identification of past guests who have not returned within a defined period and systematic re-engagement with relevant offers.', guestInteraction: 'Past guest who has not returned receives a personalized "we miss you" message with a compelling reason to return.' }
+            ]
+        },
+
+        retention: {
+            title: 'Retention Platforms — Keeping Guests Returning (The Highest-Margin Revenue)',
+            businessGoal: 'Maximize guest lifetime value through systematic relationship management and re-engagement. Turn one-time guests into repeat customers who book direct.',
+            description: 'The most profitable booking is the one that costs nothing to acquire. Past guests who book direct represent the highest-margin revenue in hospitality. These platforms maintain the relationship between stays so the hotel is the natural choice when the guest travels again.',
+            platforms: [
+                { name: 'WhatsApp', role: 'Direct, personal communication channel for re-engagement, exclusive offers, and personalized recognition. Highest engagement rates of any digital channel.', guestInteraction: 'Past guest receives birthday or anniversary message, seasonal invitation, or exclusive direct booking offer.' },
+                { name: 'Email', role: 'Structured re-engagement through newsletters, loyalty program updates, destination content, and exclusive offers for the guest database.', guestInteraction: 'Past guest receives curated content maintaining connection to the property — destination guides, new offerings, seasonal inspiration.' },
+                { name: 'Loyalty & Recognition System', role: 'Program tracking repeat guests, recording preferences, and enabling personalized recognition on return — not a points system, a relationship system.', guestInteraction: 'Repeat guest is acknowledged on arrival. Preferences are anticipated. Small gestures demonstrate that the hotel remembers and values them.' },
+                { name: 'Instagram & Facebook', role: 'Passive retention through consistent presence. Past guests who follow the property see content regularly, maintaining emotional connection and brand awareness.', guestInteraction: 'Past guest sees property content in their feed — new offerings, seasonal beauty, guest experiences — staying connected without active outreach.' }
+            ]
+        },
+
+        ecosystemPrinciple: 'No platform exists for its own sake. Every platform is assigned a specific business function — Discovery, Trust, Social Media, Visual Content, Marketing, Automation, or Retention. Platforms are evaluated continuously based on whether they are fulfilling that function for the target guest profile. When guest behaviour shifts, the ecosystem shifts with it. The question is never "What are other hotels doing?" The question is "Where are our guests, and what do they need at each stage of their journey?"'
     },
 
     // ============================================================
@@ -379,7 +423,7 @@ const HOSPITALITY_DATA = {
     growthOpportunities: [
         {
             opportunity: 'Wedding & Event Business Development',
-            description: 'Wedding bookings deliver significant revenue across rooms, banquet, catering, and services — often at higher margins than transient business. A dedicated digital presence with professional showcase, virtual tours, and targeted visibility to wedding planners and families can substantially grow this revenue stream. Many hotels underinvest in this digital presence relative to the revenue opportunity it represents.'
+            description: 'Wedding bookings deliver significant revenue across rooms, banquet, catering, and services — often at higher margins than transient business. A dedicated digital presence with professional showcase, virtual tours, and targeted visibility to wedding planners and families can substantially grow this revenue stream.'
         },
         {
             opportunity: 'Corporate Account Acquisition',
@@ -417,27 +461,27 @@ const HOSPITALITY_DATA = {
         },
         {
             question: 'We already work with a marketing agency.',
-            answer: 'Most agencies provide specific services — social media management, advertising, or website maintenance. I build complete ecosystems where every component connects: website, photography, Google presence, OTA management, guest CRM, and communication automation. The difference is system versus components. If your current arrangement was delivering the direct booking percentage, guest retention rate, and revenue per available room you want, you would not be exploring alternatives. Most hotels working with traditional agencies still experience the pain points described on this page.'
+            answer: 'Most agencies provide specific services — social media management, advertising, or website maintenance. I build complete ecosystems where every component connects: website, photography, Google presence, OTA management, guest CRM, and communication automation. The difference is system versus components. If your current arrangement was delivering the direct booking percentage, guest retention rate, and revenue per available room you want, you would not be exploring alternatives.'
         },
         {
             question: 'Our property is relatively small. Is this approach relevant for us?',
-            answer: 'Smaller properties often experience greater OTA dependency precisely because they lack the resources to build direct booking capability independently. The financial impact of reducing commission on even a modest booking volume is proportionally meaningful. The ecosystem scales to the property size — the principles apply whether you operate a compact boutique property or a large full-service hotel. The foundation is the same. The scale adapts.'
+            answer: 'Smaller properties often experience greater OTA dependency precisely because they lack the resources to build direct booking capability independently. The financial impact of reducing commission on even a modest booking volume is proportionally meaningful. The ecosystem scales to the property size — the principles apply whether you operate a compact boutique property or a large full-service hotel.'
         },
         {
             question: 'What makes this approach different from what agencies offer?',
-            answer: 'I do not start with a list of services. I start with diagnosis — studying the property, the market, the competitive set, and the current digital presence to understand what is actually broken. I build complete systems rather than isolated components. I measure success through business metrics — direct booking percentage, commission reduction, repeat guest ratio, RevPAR performance — not marketing metrics that do not connect to revenue. I have studied hospitality specifically, not marketing generally. The difference is visible in the depth of diagnosis on this page.'
+            answer: 'I do not start with a list of services. I start with diagnosis — studying the property, the market, the competitive set, and the current digital presence to understand what is actually broken. I build complete systems rather than isolated components. I measure success through business metrics — direct booking percentage, commission reduction, repeat guest ratio, RevPAR performance — not marketing metrics that do not connect to revenue.'
         },
         {
             question: 'Can this be implemented in phases?',
-            answer: 'Yes. The ecosystem is designed in progression layers. Foundation must come first — the booking website, Google presence, and professional photography establish the infrastructure everything else depends on. Visibility and growth layers follow. Automation and relationship systems build on what exists. Each phase generates value independently while enabling the next. The approach adapts to budget and timeline realities without compromising the integrity of the system.'
+            answer: 'Yes. The ecosystem is designed in progression layers. Foundation must come first — the booking website, Google presence, and professional photography establish the infrastructure everything else depends on. Visibility and growth layers follow. Automation and relationship systems build on what exists. Each phase generates value independently while enabling the next.'
         },
         {
             question: 'What do you need from us to get started?',
-            answer: 'Access to understand the current digital presence thoroughly — website, Google profile, OTA listings, booking data patterns. Honest conversation about current booking sources, occupancy patterns, revenue structure, and business goals. Availability to discuss diagnosis findings and priorities. The diagnosis phase reveals what needs to happen and in what sequence. You decide what to implement and at what pace based on clear recommendations with business rationale.'
+            answer: 'Access to understand the current digital presence thoroughly — website, Google profile, OTA listings, booking data patterns. Honest conversation about current booking sources, occupancy patterns, revenue structure, and business goals. Availability to discuss diagnosis findings and priorities. The diagnosis phase reveals what needs to happen and in what sequence.'
         },
         {
             question: 'What about our existing OTA relationships?',
-            answer: 'OTAs remain part of the distribution mix. The objective is not to eliminate OTAs — they provide genuine discovery value, especially for travelers unfamiliar with the destination. The objective is to reduce dependency by building direct booking capability that captures guests who would prefer to book direct if given a compelling, easy option. Many hotels maintain OTA presence for discovery while systematically growing direct booking share for profitability. These channels can coexist within a well-managed ecosystem.'
+            answer: 'OTAs remain part of the distribution mix. The objective is not to eliminate OTAs — they provide genuine discovery value, especially for travelers unfamiliar with the destination. The objective is to reduce dependency by building direct booking capability that captures guests who would prefer to book direct if given a compelling, easy option. These channels can coexist within a well-managed ecosystem.'
         }
     ],
 
