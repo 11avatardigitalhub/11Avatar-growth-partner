@@ -542,3 +542,4 @@ const HEALTHCARE_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Healthcare Blueprint loaded (Patient Trust Engine™)');
+window.HEALTHCARE_DATA = HEALTHCARE_DATA;

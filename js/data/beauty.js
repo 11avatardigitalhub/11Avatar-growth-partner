@@ -527,3 +527,4 @@ const BEAUTY_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Beauty Blueprint loaded (Beauty Brand Attraction System™)');
+window.BEAUTY_DATA = BEAUTY_DATA;

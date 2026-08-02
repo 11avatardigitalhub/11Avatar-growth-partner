@@ -238,3 +238,4 @@ const FASHION_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Fashion Blueprint loaded (Fashion Commerce Engine™)');
+window.FASHION_DATA = FASHION_DATA;

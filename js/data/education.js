@@ -528,3 +528,4 @@ const EDUCATION_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Education Blueprint loaded (Student Enrollment Growth System™)');
+window.EDUCATION_DATA = EDUCATION_DATA;

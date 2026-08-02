@@ -488,3 +488,4 @@ const AUTOMOBILE_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Automobile Blueprint loaded (Auto Sales Acceleration System™)');
+window.AUTOMOBILE_DATA = AUTOMOBILE_DATA;

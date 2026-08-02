@@ -518,3 +518,4 @@ const FITNESS_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Fitness Blueprint loaded (Transformation Membership Engine™)');
+window.FITNESS_DATA = FITNESS_DATA;

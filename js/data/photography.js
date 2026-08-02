@@ -233,3 +233,4 @@ const PHOTOGRAPHY_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Photography Blueprint loaded (Visual Storyteller Growth System™)');
+window.PHOTOGRAPHY_DATA = PHOTOGRAPHY_DATA;

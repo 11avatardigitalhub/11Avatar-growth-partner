@@ -522,3 +522,4 @@ const RESTAURANT_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Restaurant Blueprint loaded (Dining Discovery Engine™)');
+window.RESTAURANT_DATA = RESTAURANT_DATA;

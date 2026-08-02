@@ -531,3 +531,4 @@ const REALESTATE_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Real Estate Blueprint loaded (Property Authority System™)');
+window.REALESTATE_DATA = REALESTATE_DATA;

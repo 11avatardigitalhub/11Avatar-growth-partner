@@ -210,3 +210,4 @@ const ECOMMERCE_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Ecommerce Blueprint loaded (Ecommerce Growth Machine™)');
+window.ECOMMERCE_DATA = ECOMMERCE_DATA;

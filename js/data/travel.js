@@ -237,3 +237,4 @@ const TRAVEL_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Travel Blueprint loaded (Travel Experience Engine™)');
+window.TRAVEL_DATA = TRAVEL_DATA;

@@ -350,3 +350,4 @@ const JEWELRY_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Jewelry Blueprint loaded (Jewelry Desire Engine™)');
+window.JEWELRY_DATA = JEWELRY_DATA;

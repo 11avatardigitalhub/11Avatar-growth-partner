@@ -235,3 +235,4 @@ const INTERIOR_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Interior Design Blueprint loaded (Interior Design Studio Engine™)');
+window.INTERIOR_DATA = INTERIOR_DATA;

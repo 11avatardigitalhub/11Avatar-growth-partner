@@ -198,3 +198,4 @@ const RETAIL_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Retail Blueprint loaded (Retail Footfall Engine™)');
+window.RETAIL_DATA = RETAIL_DATA;

@@ -503,3 +503,4 @@ const LEGAL_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Legal Blueprint loaded (Legal Authority System™)');
+window.LEGAL_DATA = LEGAL_DATA;

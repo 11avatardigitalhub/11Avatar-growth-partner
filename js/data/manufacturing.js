@@ -561,3 +561,4 @@ const MANUFACTURING_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Manufacturing Blueprint loaded (Industrial Lead Engine™)');
+window.MANUFACTURING_DATA = MANUFACTURING_DATA;

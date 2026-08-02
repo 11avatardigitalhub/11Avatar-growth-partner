@@ -484,3 +484,4 @@ const FINANCE_DATA = {
 };
 
 console.log('✅ 11 Avtar Digital Hub — Finance Blueprint loaded (Financial Clarity Engine™)');
+window.FINANCE_DATA = FINANCE_DATA;
