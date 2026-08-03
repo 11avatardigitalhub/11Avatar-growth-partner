@@ -6,7 +6,7 @@
  * ============================================================
  */
 
-const INDUSTRY_REGISTRY = {
+var INDUSTRY_REGISTRY = {
     hospitality: {
         id: 'hospitality',
         name: 'Hospitality',
@@ -261,16 +261,10 @@ const INDUSTRY_REGISTRY = {
     }
 };
 
-/**
- * Get industry by ID
- */
 function getIndustryById(id) {
     return INDUSTRY_REGISTRY[id] || null;
 }
 
-/**
- * Get industry by slug
- */
 function getIndustryBySlug(slug) {
     for (var key in INDUSTRY_REGISTRY) {
         if (INDUSTRY_REGISTRY.hasOwnProperty(key) && INDUSTRY_REGISTRY[key].slug === slug) {
@@ -280,36 +274,24 @@ function getIndustryBySlug(slug) {
     return null;
 }
 
-/**
- * Get all industries as array
- */
 function getAllIndustries() {
     return Object.values(INDUSTRY_REGISTRY).sort(function(a, b) {
         return a.order - b.order;
     });
 }
 
-/**
- * Get featured industries
- */
 function getFeaturedIndustries() {
     return getAllIndustries().filter(function(ind) {
         return ind.featured;
     });
 }
 
-/**
- * Get industries by category
- */
 function getIndustriesByCategory(category) {
     return getAllIndustries().filter(function(ind) {
         return ind.category === category;
     });
 }
 
-/**
- * Get all unique categories
- */
 function getAllCategories() {
     var categories = {};
     getAllIndustries().forEach(function(ind) {
@@ -318,22 +300,16 @@ function getAllCategories() {
     return Object.keys(categories).sort();
 }
 
-/**
- * Get industry data variable name
- */
 function getIndustryDataVar(id) {
     var ind = getIndustryById(id);
     return ind ? ind.dataVar : null;
 }
 
-/**
- * Get total industry count
- */
 function getIndustryCount() {
     return Object.keys(INDUSTRY_REGISTRY).length;
 }
 
 console.log('✅ 11 Avtar Digital Hub — Industry Registry loaded');
-console.log('📋 Total Industries:', getIndustryCount());
-console.log('⭐ Featured:', getFeaturedIndustries().length);
-console.log('📂 Categories:', getAllCategories().join(', '));
+console.log('📋 Total Industries: ' + getIndustryCount());
+console.log('⭐ Featured: ' + getFeaturedIndustries().length);
+console.log('📂 Categories: ' + getAllCategories().join(', '));
