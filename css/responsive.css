@@ -3,6 +3,7 @@
    Responsive Styles — All Breakpoints
    Industry Growth Intelligence System™
    Mobile-First: 320px → 480px → 768px → 1024px → 1280px → 1440px+
+   ENHANCED: Larger Fonts + Neon Glow Support
    ============================================================ */
 
 /* ============================================================
@@ -12,16 +13,16 @@
 
 /* Typography scaling for small screens */
 @media (max-width: 479px) {
-    h1 { font-size: 1.8rem; }
-    h2 { font-size: 1.6rem; }
-    h3 { font-size: 1.4rem; }
-    h4 { font-size: 1.4rem; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.9rem; }
+    h3 { font-size: 1.6rem; }
+    h4 { font-size: 1.35rem; }
     
-    .section-title { font-size: 1.6rem; }
-    .section-sub { font-size: 1.2rem; }
+    .section-title { font-size: 1.9rem; }
+    .section-sub { font-size: 1.05rem; }
     
-    .hero-title { font-size: 1.8rem; }
-    .hero-sub { font-size: 1.2rem; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-sub { font-size: 1.05rem; }
 }
 
 /* ============================================================
@@ -61,7 +62,7 @@
 
     /* Sections */
     section {
-        padding: 35px 0;
+        padding: 40px 0;
     }
 
     .section-header {
@@ -70,7 +71,7 @@
 
     /* Cards */
     .card {
-        padding: 16px 14px;
+        padding: 18px 16px;
     }
 
     /* Proposal Panel */
@@ -81,21 +82,21 @@
 
     /* Quantified Table */
     .quant-table {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .quant-table thead th,
     .quant-table tbody td {
-        padding: 8px 10px;
+        padding: 10px 12px;
     }
 
     /* Checklist */
     .checklist-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 4px;
+        gap: 6px;
     }
     .check-item {
-        font-size: 0.72rem;
-        padding: 6px 8px;
+        font-size: 0.8rem;
+        padding: 8px 10px;
     }
 
     /* Tags */
@@ -103,12 +104,12 @@
         gap: 6px;
     }
     .tag {
-        font-size: 0.7rem;
-        padding: 5px 12px;
+        font-size: 0.8rem;
+        padding: 6px 14px;
     }
     .tag.lg {
-        font-size: 0.78rem;
-        padding: 8px 16px;
+        font-size: 0.9rem;
+        padding: 10px 18px;
     }
 
     /* Hero */
@@ -132,7 +133,7 @@
         min-width: 70px;
     }
     .stat-num {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     /* Industry Grid */
@@ -141,13 +142,13 @@
         gap: 10px;
     }
     .industry-card {
-        padding: 14px 10px;
+        padding: 16px 12px;
     }
     .industry-card-icon {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .industry-card-name {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     /* Steps */
@@ -159,17 +160,17 @@
         display: none;
     }
     .step-number {
-        width: 52px;
-        height: 52px;
-        font-size: 1.2rem;
+        width: 60px;
+        height: 60px;
+        font-size: 1.4rem;
     }
 
     /* Philosophy Box */
     .philosophy-box {
-        padding: 24px 18px;
+        padding: 28px 20px;
     }
     .philosophy-box h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     .philosophy-box .pillars {
         gap: 12px;
@@ -177,13 +178,13 @@
 
     /* Deliverables */
     .deliverable-item {
-        font-size: 0.7rem;
-        padding: 4px 10px;
+        font-size: 0.8rem;
+        padding: 6px 12px;
     }
 
     /* CTA */
     .cta-section {
-        padding: 40px 0;
+        padding: 50px 0;
     }
     .cta-buttons {
         flex-direction: column;
@@ -197,7 +198,7 @@
 
     /* Footer */
     .footer {
-        padding: 40px 0 30px;
+        padding: 50px 0 30px;
     }
     .footer-grid {
         gap: 24px;
@@ -208,15 +209,15 @@
 
     /* Problem Cards */
     .problem-card {
-        padding: 14px 16px;
+        padding: 16px 18px;
     }
 
     /* Back to top */
     .back-to-top {
         bottom: 16px;
         right: 16px;
-        width: 38px;
-        height: 38px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -243,7 +244,7 @@
         gap: 16px;
     }
     .nav-link {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
 
     /* Hero */
@@ -252,7 +253,7 @@
         gap: 40px;
     }
     .hero-title {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
     /* Industry Grid */
@@ -270,7 +271,7 @@
 
     /* Sections */
     section {
-        padding: 45px 0;
+        padding: 55px 0;
     }
 
     /* Checklist */
@@ -285,7 +286,7 @@
 
     /* Quantified Table */
     .quant-table {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -344,7 +345,7 @@
     }
 
     .hero-title {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     .industries-grid {
@@ -352,7 +353,7 @@
     }
 
     section {
-        padding: 70px 0;
+        padding: 80px 0;
     }
 
     .checklist-grid {
@@ -484,7 +485,7 @@
 @media (hover: none) and (pointer: coarse) {
     /* Larger touch targets */
     .check-item {
-        padding: 10px 14px;
+        padding: 12px 16px;
         min-height: 44px;
     }
     
@@ -526,7 +527,7 @@
     }
     
     .hero-title {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 }
 

@@ -2,13 +2,14 @@
    11 AVTAR DIGITAL HUB
    Homepage Styles — Hero, Industry Selector, Features
    Industry Growth Intelligence System™
+   ENHANCED: Larger Fonts + Neon Glow Effects
    ============================================================ */
 
 /* ============================================================
    HERO SECTION
    ============================================================ */
 .hero-section {
-    padding: 40px 0 80px;
+    padding: 60px 0 100px;
     position: relative;
     overflow: hidden;
     background: var(--light);
@@ -20,8 +21,14 @@
     right: -15%;
     width: 70%;
     height: 140%;
-    background: radial-gradient(ellipse at 60% 50%, rgba(197, 164, 109, 0.06) 0%, transparent 70%);
+    background: radial-gradient(ellipse at 60% 50%, rgba(197, 164, 109, 0.08) 0%, transparent 70%);
     pointer-events: none;
+    animation: neonPulse 4s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
 }
 
 .hero-container {
@@ -35,26 +42,28 @@
 
 /* Hero Content */
 .hero-content {
-    max-width: 640px;
+    max-width: 680px;
 }
 
 .hero-badge {
     display: inline-block;
     background: var(--gold-light);
     color: var(--gold);
-    padding: 6px 16px;
+    padding: 8px 20px;
     border-radius: var(--radius-full);
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     border: 1px solid var(--gold-border);
     margin-bottom: var(--space-lg);
+    box-shadow: var(--neon-gold);
+    animation: neonPulse 3s ease-in-out infinite;
 }
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(2.6rem, 5.5vw, 4rem);
+    font-size: clamp(3rem, 6vw, 5rem);
     font-weight: 700;
     line-height: 1.08;
     letter-spacing: -0.03em;
@@ -65,14 +74,15 @@
 .gold-block {
     display: inline;
     color: var(--gold);
+    text-shadow: var(--neon-text);
 }
 
 .hero-sub {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: var(--space-xl);
-    max-width: 540px;
+    max-width: 560px;
     font-weight: 400;
 }
 
@@ -90,7 +100,7 @@
     display: flex;
     align-items: center;
     gap: var(--space-sm);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -101,10 +111,10 @@
 
 .hero-selector select {
     width: 100%;
-    max-width: 480px;
-    padding: 16px 20px;
+    max-width: 500px;
+    padding: 18px 24px;
     font-family: var(--font-body);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--text);
     background: var(--card-bg);
@@ -112,23 +122,23 @@
     border-radius: var(--radius-lg);
     cursor: pointer;
     outline: none;
-    transition: var(--transition);
+    transition: var(--transition-glow);
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23C5A46D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23C5A46D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right 16px center;
-    padding-right: 48px;
+    background-position: right 20px center;
+    padding-right: 56px;
 }
 
 .hero-selector select:hover {
     border-color: var(--gold);
-    box-shadow: 0 0 0 4px rgba(197, 164, 109, 0.08);
+    box-shadow: var(--neon-gold);
 }
 
 .hero-selector select:focus {
     border-color: var(--gold);
-    box-shadow: 0 0 0 6px rgba(197, 164, 109, 0.12);
+    box-shadow: var(--neon-gold-strong);
 }
 
 /* Hero Stats */
@@ -142,19 +152,20 @@
 .stat {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
 }
 
 .stat-num {
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 700;
     color: var(--gold);
     line-height: 1;
+    text-shadow: var(--neon-text);
 }
 
 .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -171,45 +182,46 @@
     background: var(--card-bg);
     border-radius: var(--radius-xl);
     padding: 0;
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-xl), var(--neon-gold);
     border: 1px solid var(--gold-border);
     overflow: hidden;
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
     transform: rotate(2deg);
-    transition: var(--transition);
+    transition: var(--transition-glow);
 }
 
 .hero-card:hover {
     transform: rotate(0deg);
-    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.15), var(--neon-gold-strong);
 }
 
 .hero-card-header {
     background: var(--dark);
     color: var(--gold);
-    padding: 14px 20px;
+    padding: 16px 24px;
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     font-weight: 500;
 }
 
 .hero-card-dots {
     display: flex;
-    gap: 5px;
+    gap: 6px;
 }
 
 .hero-card-dots span {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: var(--gold-border);
 }
 
 .hero-card-dots span:first-child {
     background: var(--gold);
+    box-shadow: var(--neon-gold);
 }
 
 .hero-card-body {
@@ -222,26 +234,27 @@
 .hero-card-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 10px 14px;
+    gap: 14px;
+    padding: 12px 16px;
     background: var(--light-secondary);
     border-radius: var(--radius-sm);
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-secondary);
     border: 1px solid transparent;
-    transition: var(--transition);
+    transition: var(--transition-glow);
 }
 
 .hero-card-item:hover {
     border-color: var(--gold-border);
     background: var(--gold-light);
+    box-shadow: var(--neon-gold);
 }
 
 .hero-card-item i {
     color: var(--gold);
-    font-size: 0.9rem;
-    width: 18px;
+    font-size: 1rem;
+    width: 20px;
     text-align: center;
 }
 
@@ -250,18 +263,18 @@
    ============================================================ */
 .industries-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: var(--space-md);
 }
 
 .industry-card {
     background: var(--card-bg);
     border-radius: var(--radius-lg);
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-xl) var(--space-md);
     text-align: center;
     border: 1px solid var(--gold-border);
     cursor: pointer;
-    transition: var(--transition);
+    transition: var(--transition-glow);
     text-decoration: none;
     color: var(--text);
     position: relative;
@@ -277,12 +290,12 @@
     bottom: 0;
     background: linear-gradient(180deg, transparent 60%, rgba(197, 164, 109, 0.04) 100%);
     opacity: 0;
-    transition: var(--transition);
+    transition: var(--transition-glow);
 }
 
 .industry-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg), var(--neon-gold);
     border-color: var(--gold-border-strong);
 }
 
@@ -291,20 +304,20 @@
 }
 
 .industry-card-icon {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     margin-bottom: var(--space-sm);
     display: block;
 }
 
 .industry-card-name {
     font-family: var(--font-heading);
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 4px;
 }
 
 .industry-card-framework {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: var(--gold);
     font-weight: 500;
     letter-spacing: 0.03em;
@@ -323,7 +336,7 @@
 .steps-grid::before {
     content: '';
     position: absolute;
-    top: 36px;
+    top: 42px;
     left: 10%;
     right: 10%;
     height: 2px;
@@ -338,8 +351,8 @@
 }
 
 .step-number {
-    width: 72px;
-    height: 72px;
+    width: 84px;
+    height: 84px;
     border-radius: 50%;
     background: var(--dark);
     color: var(--gold);
@@ -347,28 +360,28 @@
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin: 0 auto var(--space-md);
     border: 2px solid var(--gold-border);
-    transition: var(--transition);
+    transition: var(--transition-glow);
 }
 
 .step-card:hover .step-number {
     background: var(--gold);
     color: var(--dark);
     border-color: var(--gold);
-    box-shadow: 0 0 24px rgba(197, 164, 109, 0.3);
+    box-shadow: var(--neon-gold-strong);
 }
 
 .step-title {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 4px;
 }
 
 .step-desc {
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
 }
 
@@ -389,19 +402,19 @@
 }
 
 .trust-icon {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--gold);
     margin-bottom: var(--space-xs);
 }
 
 .trust-label {
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text);
 }
 
 .trust-sublabel {
-    font-size: 0.68rem;
+    font-size: 0.78rem;
     color: var(--text-muted);
 }
 
@@ -423,10 +436,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(197, 164, 109, 0.06) 0%, transparent 60%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(197, 164, 109, 0.08) 0%, transparent 60%);
     pointer-events: none;
+    animation: neonPulse 4s ease-in-out infinite;
 }
 
 .cta-section .container {
@@ -441,9 +455,9 @@
 
 .cta-sub {
     color: var(--text-on-dark-muted);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: var(--space-xl);
-    max-width: 600px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -488,7 +502,7 @@
     }
 
     .hero-card {
-        max-width: 320px;
+        max-width: 340px;
         transform: none;
         margin: 0 auto;
     }
@@ -502,21 +516,21 @@
     }
 
     .industries-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
 }
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: 20px 0 50px;
+        padding: 40px 0 60px;
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .hero-sub {
-        font-size: 0.95rem;
+        font-size: 1.05rem;
     }
 
     .hero-stats {
@@ -529,15 +543,19 @@
         min-width: 80px;
     }
 
+    .stat-num {
+        font-size: 2rem;
+    }
+
     .steps-grid {
         grid-template-columns: 1fr;
         gap: var(--space-md);
     }
 
     .step-number {
-        width: 56px;
-        height: 56px;
-        font-size: 1.3rem;
+        width: 64px;
+        height: 64px;
+        font-size: 1.4rem;
     }
 
     .industries-grid {
@@ -550,11 +568,11 @@
     }
 
     .industry-card-icon {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .industry-card-name {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     .trust-bar {
@@ -564,7 +582,7 @@
 
 @media (max-width: 480px) {
     .hero-selector select {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         padding: 14px 16px;
     }
 
